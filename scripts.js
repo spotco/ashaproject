@@ -5,16 +5,14 @@ var currentSlide = "field0";
 $(function() {
 	$(".next").click(rotate);
 	// Ajax request to pull data from database.
-	$.get('ashadb_insert.php')
-		.done(successFunct)
-		.fail(ajaxFailure);
+	$.get('jsout.php').done(successFunct).fail(ajaxFailure);
 });
 
 // Runs when the AJAX request was successful
 function successFunct(data) {
 	// TEST CODE - please delete!
-	
-	var	data = eval({"array": [
+	var data = {"array": [{"img_url":"https://lh3.googleusercontent.com/-wFK3xleOSdo/T_gNnQSN5fI/AAAAAAAAARU/N8VVN2l0WSc/s480/trinita.jpg","img_style":"max-width: none; width: 350px; height: 263px; margin-left: 0px; margin-top: -48px;","fields":[{"field_name":"Field 1! ","details":["Detail 1","Detail 2","Detail 3"]},{"field_name":"Field 2","details":["Detail 1","Detail 2"]}],"project_name":"Project Title Of Awesome","focus":"Focus grouuup"}]}
+	var	data2 = {"array": [
         {
             "fields": [
                 {
@@ -53,7 +51,7 @@ function successFunct(data) {
             "project_name": "foo",
             "focus": "bar"
         }
-    ]});
+    ]};
 	$("#container").children().remove();
 
 	for(var k = 0; k < data.array.length; k++ ) {
@@ -81,13 +79,29 @@ function successFunct(data) {
 		$(widget.find("h2")).text(data.array[k].project_name);
 		$(widget.find(".focus")).text(data.array[k].focus);
 		var photoInfo;
-		if (!data.array[k].photo) {
+
+		if (!data.array[k].img_url) {
 			photoInfo = "http://placekitten.com/350/200";  // Adorable placeholder image, if use didn't upload one.
 		} else {
-			photoInfo = data.array[k].photo;
+			photoInfo = data.array[k].img_url;
 		}
-		$(widget.find("img")).attr("src", photoInfo);
 
+		var imageAndProperties = $(widget.find("img"));
+		imageAndProperties.attr("src", photoInfo);
+		var uglyString =  data.array[k].img_style;
+		var uglyString2 = uglyString.split(";");
+		var final = "";
+		for (var m = 0; m < uglyString2.length - 1; m++) {
+			var old = imageAndProperties.attr("style");
+			var valuePair = uglyString2[m].split(":");
+			imageAndProperties.css({old + "," + valuePair[0] + ":" + valuePair[1]});
+			//final += '"' + valuePair[0].trim() + "': '" + valuePair[1].trim() + "', ";
+		}
+		//final = final.substring(0, (final.length -2));
+		//final = '{' + final + '}';
+		//console.log(final);
+		
+		//console.log(imageAndProperties);
 		//Loop over all possible fields of information about project.
 		var array = data.array[k].fields;
 		for(var i = 0; i < array.length; i++){
@@ -112,10 +126,8 @@ function successFunct(data) {
 
 // Change "slides" of information 
 function rotate(elem) {
-	console.log($(this).attr("class"));
 	var widget = $(this).parent().parent().parent();
 	var num = $(widget.find(".left > div > div")).length;
-	console.log($(widget).attr("class"));
 	/*console.log(num);*/
 	$(widget.find("." + currentSlide)).hide();
 	var current = parseInt(currentSlide[5]);
