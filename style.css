@@ -18,6 +18,8 @@
 .widget {
 	box-shadow: 0 1px 3px rgba(34, 25, 25, 0.4);
 	padding:10px;
+	float: left;
+	margin: 15px;
 }
 
 .widget h2 {
@@ -28,7 +30,7 @@ h3 {
 	font-size: 18px;
 }
 
-.next span {
+.next span, .previous span {
 	font-size: 25px;
 	font-weight: bold;
 	vertical-align: top;
@@ -39,8 +41,13 @@ h3 {
 	cursor: pointer;
 }
 
+.previous {
+	float: left;
+	cursor: pointer;
+}
+
 .left ul {
-	height: 80px;
+	height: 90px;
 }
 
 .widget > p, .field1 > div, .field2 > div, .field3 > div, .field4 > div {
@@ -49,6 +56,10 @@ h3 {
 
 .left ul {
 	padding-left: .2em;
+}
+
+.left > p {
+	margin-top: 25px;
 }
 
 ::-webkit-scrollbar {
@@ -64,4 +75,13 @@ h3 {
 ::-webkit-scrollbar-thumb {
     border-radius: 10px;
     -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+}
+
+.left > div > div > div {
+	overflow: auto;
+}
+
+.focus {
+	height: 40px;
+	overflow: auto;
 }

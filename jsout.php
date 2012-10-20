@@ -57,8 +57,9 @@ foreach ($projects as $projects_array_index => $project) {
 	$project_o["fields"] = $project_o_fields;
 	array_push($projects_o, $project_o);
 }
-
-$jsout = json_encode($projects_o);
+$js_o = array();
+$js_o["array"] = $projects_o;
+$jsout = json_encode($js_o);
 echo $jsout;
 
 ?>

@@ -127,6 +127,9 @@ $(function(){
 			console.log(r);
 		});
 		console.log(jason);
+		alert("Submission successful!");
+		$("input, textarea").val("");
+
 	})
 })
 
@@ -184,6 +187,7 @@ function get_detail() {
 			</div>
 			<div class="span2">
 				<h3>Image URL(Optional)</h3>
+				<p>Click load, then drag to crop image</p>
 				<input type="text" size="7" id="imgurl" name="imgurl"/>
 				<button style="margin-top:-10px" class="btn" id="loadimg">Load</button>
 				<br />

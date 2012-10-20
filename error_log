@@ -466,3 +466,7 @@
 [20-Oct-2012 09:12:24] PHP Warning:  Invalid argument supplied for foreach() in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 35
 [20-Oct-2012 09:19:29] PHP Warning:  Invalid argument supplied for foreach() in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 35
 [20-Oct-2012 09:21:15] PHP Warning:  PDOStatement::execute() [<a href='pdostatement.execute'>pdostatement.execute</a>]: SQLSTATE[HY093]: Invalid parameter number: parameter was not defined in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 24
+[20-Oct-2012 10:06:56] PHP Fatal error:  Call to a member function bindValue() on a non-object in /home/spotco/public_html/ashaproj/asha_delete.php on line 41
+[20-Oct-2012 10:09:58] PHP Warning:  Invalid argument supplied for foreach() in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 35
+[20-Oct-2012 10:15:12] PHP Warning:  Invalid argument supplied for foreach() in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 35
+[20-Oct-2012 10:28:44] PHP Fatal error:  Call to undefined function  deleta_data() in /home/spotco/public_html/ashaproj/asha_delete.php on line 56
