@@ -1,0 +1,64 @@
+body {
+	background-image:url("diamond.png");
+}
+
+button {
+	margin-top:-10px;
+}
+
+.container {
+	background-color: white;
+	padding: 10em;
+	box-shadow: 0px 0px 20px #888888;
+}
+
+.detailfield {
+	width:40%;
+}
+
+.enterfield,#project  {
+	font-size: 30px !important;
+	height:35px !important;
+	width: 50% !important;
+}
+
+.fieldcombo {
+	margin-bottom: 50px;
+	margin-top: 50px;
+}
+
+#focus {
+	width: 40%;
+}
+
+#logo {
+	float: left;
+}
+
+#logo img {
+	height: 60px;
+}
+
+.more {
+	cursor:pointer;
+	margin:10px;
+}
+
+.nav > li {
+	height:60px;
+	float:right;
+}
+.nav > li > a {
+	margin-top:20px;
+	font-size:30px;
+}
+
+.span2 > div {
+	width: 350px;
+	height: 200px;
+	overflow: hidden;	margin-left:-80px;
+}
+
+.span2 > div > img {
+	max-width: none;
+}

@@ -27,16 +27,27 @@
 	body {
 		background-image:url("diamond.png");
 	}
-	
-	ul {
+	tr:nth-child(even)    { background-color:#ddd; }
+	tr:nth-child(odd)    { background-color:#fff; }
+	table {
 		font-size:30px;
-		list-style-type:circle;
-		
+
 	}
 	
-	li {
-		margin-top:10px;
+	tr {
+		height:40px;
 	}
+	
+	td {
+		padding:5px;
+	}
+	
+	.container {
+		background-color: white;
+		padding: 10em;
+		box-shadow: 0px 0px 20px #888888;
+	}
+
 	</style>
 
 	<script>
@@ -45,14 +56,15 @@
 		console.log(input);
 
 		for(var i = 0; i < input.array.length; i++) {
-			var newBlock = $("<li>");
+			var newBlock = $("<tr>");
+			var newLine = $("<td>");
 			var link = $("<a>");
 			
 			
 			link.text(input.array[i].project_name);
 			link.attr({"href":"edit.php?id="+input.array[i].p_id});
-			newBlock.append(link);
-			
+			newLine.append(link);
+			newBlock.append(newLine);
 			
 			newBlock.attr({"id":input.array[i].p_id});
 			
@@ -63,24 +75,9 @@
 </head>
 <body>
 
-	<div class="navbar navbar-fixed-top">
-		<div class="navbar-inner">
-
-				<a class="brand" href="http://www.ashanet.org/">
-					<div id="logo" style="float:left;">
-						<img src="http://www.ashanet.org/graphics/asha_logo.png" style="height:60px;" alt="Asha for Education"/>
-					</div>
-				</a>
-				
-				<div class="nav-collapse collapse">
-					<ul class="nav">
-						<li><a href="index.html">Home</a></li>
-						<li><a href="submit.php">Submit</a></li>
-						<li><a href="edit_list.php">Edit</a></li>
-					</ul>
-				</div>
-		</div>
-	</div>
+	<?php include('common.php');
+	headerbar();
+	?>
 
 
 	<div class="container">
@@ -90,8 +87,8 @@
 	<br/>
 		<h1>Projects Directory</h1>
 		<hr />
-		<ul id="projects">
-		</ul>
+		<table id="projects" border="1">
+		</table>
 	</div>
 </body>
 </html>

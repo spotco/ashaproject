@@ -248,24 +248,10 @@ function get_detail() {
 <body>
 
 
-	<div class="navbar navbar-fixed-top">
-		<div class="navbar-inner">
-
-				<a class="brand" href="http://www.ashanet.org/">
-					<div id="logo" style="float:left;">
-						<img src="http://www.ashanet.org/graphics/asha_logo.png" style="height:60px;" alt="Asha for Education"/>
-					</div>
-				</a>
-				
-				<div class="nav-collapse collapse">
-					<ul class="nav">
-						<li><a href="index.html">Home</a></li>
-						<li><a href="submit.php">Submit</a></li>
-						<li><a href="edit_list.php">Edit</a></li>
-					</ul>
-				</div>
-		</div>
-	</div>
+<?php
+include("common.php");
+headerbar();
+?>
 
 	<div class="container">
 		<h1>Project Edit</h1>
@@ -296,7 +282,7 @@ function get_detail() {
 				<img class="jcrop_target" src="" />
 				<br />
 				<br />
-				<div style="width:350px;height:200px;overflow:hidden;">
+				<div style="width:350px;height:200px;overflow:hidden;margin-left:-80px;">
 					<img id="preview" style="max-width:none;" src="" />
 				</div>
 			</div>
