@@ -1,15 +1,6 @@
 <?php  
-		$SERVER = "localhost";
-        $USER = "spotco_sql";
-        $PASSWORD = "dododo";
-        $DBNAME = "spotco_ashaproject";
-        define("DBNAME", $DBNAME, true);
-		
-        try {
-                $DB = new PDO("mysql:dbname=$DBNAME;host=$SERVER", $USER, $PASSWORD);
-        } catch (PDOException $err) {
-                die("Connection to database failed: ".$err->getMessage());
-        }
+/*This file handles the backend for changes to existing data*/
+		include('db_connect.php');
 		
 		include 'asha_delete.php';
 		
@@ -22,6 +13,7 @@
 		
 		$decoded = json_decode($json,true);
 		print_r($decoded);
+
 		//Query to insert given project
 		$insert_proj = $DB->prepare('INSERT INTO '.DBNAME.'.projects (project_name,focus,image_url,image_style,video,p_id) VALUES (:project_name,:focus,:img_url, :img_style, :video, :p_id)');
         $insert_proj->bindValue(":project_name"            ,$decoded["project_name"]);

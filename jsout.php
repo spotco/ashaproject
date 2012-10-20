@@ -1,6 +1,14 @@
 <?php
 //sdelete from projects;delete from fields; delete from details;
 
+/**
+Json webservice that connects to projects database.
+@usage:
+	call without parameters to get json out for all current projects
+	call with post/get params target = id to get specific target project
+	include in php with $store = true to get output in variable $store
+**/
+
 $SERVER = "localhost";
 $USER = "spotco_sql";
 $PASSWORD = "dododo";

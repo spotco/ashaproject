@@ -6,6 +6,14 @@ button {
 	margin-top:-10px;
 }
 
+body:not([id]) {
+	cursor:pointer !important;
+}
+
+a {
+	cursor:pointer !important;
+}
+
 .container {
 	background-color: white;
 	padding: 10em;

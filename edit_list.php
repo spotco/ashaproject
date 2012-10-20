@@ -34,6 +34,9 @@
 
 	}
 	
+	.delete {
+		color:red;
+	}
 	tr {
 		height:40px;
 	}
@@ -52,24 +55,39 @@
 
 	<script>
 		window.onload=function(){
-		var input = <?=$store?>;
-		console.log(input);
+			var input = <?=$store?>;
+			console.log(input);
+			
+			input.array.forEach(function(i) {
+				var newBlock = $("<tr>");
+				var newLine = $("<td>");
+				var link = $("<a>");
+				var deleteLink = $("<a>");
+				var deleteCell = $("<td>");
+				
+				
+				link.text(i.project_name);
+				link.attr({"href":"edit.php?id="+i.p_id});
+				deleteLink.text("X");
+				deleteLink.attr({"href":"#","class":"delete"});
+				
+				
+				var cur = i.p_id;
+				deleteLink.click(function(){
+					$.post("asha_delete.php",{p_id:cur},function(e){
+						window.location.reload();
+					});
+				});
+				newLine.append(link);
+				newBlock.append(newLine);
+				deleteCell.append(deleteLink);
+				newBlock.append(deleteCell);
+				
+				newBlock.attr({"id":i.p_id});
+				
+				$("#projects").append(newBlock);
+			});
 
-		for(var i = 0; i < input.array.length; i++) {
-			var newBlock = $("<tr>");
-			var newLine = $("<td>");
-			var link = $("<a>");
-			
-			
-			link.text(input.array[i].project_name);
-			link.attr({"href":"edit.php?id="+input.array[i].p_id});
-			newLine.append(link);
-			newBlock.append(newLine);
-			
-			newBlock.attr({"id":input.array[i].p_id});
-			
-			$("#projects").append(newBlock);
-		}
 		}
 	</script>
 </head>

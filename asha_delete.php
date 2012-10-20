@@ -1,17 +1,7 @@
 <?php   
 
 function delete_data($p_id) {
-		$SERVER = "localhost";
-        $USER = "spotco_sql";
-        $PASSWORD = "dododo";
-        $DBNAME = "spotco_ashaproject";
-        define("DBNAME", $DBNAME, true);
-		
-        try {
-                $DB = new PDO("mysql:dbname=$DBNAME;host=$SERVER", $USER, $PASSWORD);
-        } catch (PDOException $err) {
-                die("Connection to database failed: ".$err->getMessage());
-        }
+	include('db_connect.php');
         
 		$delete_proj = $DB->prepare('delete from projects where p_id = :p_id');
 		$select_field = $DB->prepare('select * from fields  where for_key_p_id=:p_id');
@@ -52,8 +42,13 @@ function delete_data($p_id) {
         }
 		
 		return true;
-		}
-		delete_data(24);
-		delete_data(26);
+}
+
+if (isset($_POST["p_id"]) && is_numeric($_POST["p_id"])  ) {
+	$is_delete = delete_data($_POST["p_id"]);
+	echo("deleting+$is_delete");
+} else {
+	echo "else".$_POST["p_id"];
+}
 
 ?>

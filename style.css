@@ -4,6 +4,14 @@
 	overflow: hidden;
 }
 
+body:not([id]) {
+	cursor:pointer !important;
+}
+
+a {
+	cursor:pointer !important;
+}
+
 .video p {
 	font-weight: bold;
 	margin: 0;

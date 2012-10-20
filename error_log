@@ -478,3 +478,4 @@
 [20-Oct-2012 13:43:07] PHP Parse error:  syntax error, unexpected T_STRING in /home/spotco/public_html/ashaproj/edit_list.php on line 75
 [20-Oct-2012 13:43:29] PHP Parse error:  syntax error, unexpected T_STRING in /home/spotco/public_html/ashaproj/edit_list.php on line 75
 [20-Oct-2012 13:43:30] PHP Parse error:  syntax error, unexpected T_STRING in /home/spotco/public_html/ashaproj/edit_list.php on line 75
+[20-Oct-2012 14:16:55] PHP Warning:  Invalid argument supplied for foreach() in /home/spotco/public_html/ashaproj/update.php on line 37

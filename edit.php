@@ -66,6 +66,13 @@ body {
 	padding: 10em;
 	box-shadow: 0px 0px 20px #888888;
 }
+body:not([id]) {
+	cursor:pointer !important;
+}
+
+a {
+	cursor:pointer !important;
+}
 
 	</style>
 	<script>
