@@ -123,3 +123,265 @@
 [20-Oct-2012 06:10:12] PHP Warning:  Invalid argument supplied for foreach() in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 34
 [20-Oct-2012 06:16:27] PHP Warning:  Invalid argument supplied for foreach() in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 34
 [20-Oct-2012 06:26:15] PHP Warning:  Invalid argument supplied for foreach() in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 34
+[20-Oct-2012 07:14:38] PHP Parse error:  syntax error, unexpected '[' in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 83
+[20-Oct-2012 07:15:47] PHP Fatal error:  Can't use function return value in write context in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 83
+[20-Oct-2012 07:16:49] PHP Fatal error:  Can't use function return value in write context in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 83
+[20-Oct-2012 07:17:48] PHP Parse error:  syntax error, unexpected ';' in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 83
+[20-Oct-2012 07:17:56] PHP Parse error:  syntax error, unexpected ';' in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 83
+[20-Oct-2012 07:18:52] PHP Parse error:  syntax error, unexpected ';' in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 87
+[20-Oct-2012 07:19:03] PHP Parse error:  syntax error, unexpected ';' in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 87
+[20-Oct-2012 07:19:24] PHP Fatal error:  Call to undefined method PDO::fetchAll() in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 71
+[20-Oct-2012 07:20:22] PHP Warning:  Invalid argument supplied for foreach() in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 35
+[20-Oct-2012 07:20:22] PHP Fatal error:  Call to undefined method PDO::fetchAll() in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 71
+[20-Oct-2012 07:20:48] PHP Warning:  Invalid argument supplied for foreach() in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 35
+[20-Oct-2012 07:20:48] PHP Fatal error:  Call to undefined method PDO::fetchAll() in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 71
+[20-Oct-2012 07:23:11] PHP Fatal error:  Call to undefined method PDO::fetchAll() in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 71
+[20-Oct-2012 07:24:47] PHP Warning:  end() [<a href='function.end'>function.end</a>]: Passed variable is not an array or object in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 87
+[20-Oct-2012 07:24:47] PHP Warning:  end() [<a href='function.end'>function.end</a>]: Passed variable is not an array or object in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 87
+[20-Oct-2012 07:24:47] PHP Warning:  array_push() [<a href='function.array-push'>function.array-push</a>]: First argument should be an array in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 87
+[20-Oct-2012 07:24:47] PHP Warning:  end() [<a href='function.end'>function.end</a>]: Passed variable is not an array or object in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 87
+[20-Oct-2012 07:24:47] PHP Warning:  array_push() [<a href='function.array-push'>function.array-push</a>]: First argument should be an array in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 87
+[20-Oct-2012 07:24:47] PHP Warning:  end() [<a href='function.end'>function.end</a>]: Passed variable is not an array or object in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 87
+[20-Oct-2012 07:24:47] PHP Warning:  array_push() [<a href='function.array-push'>function.array-push</a>]: First argument should be an array in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 87
+[20-Oct-2012 07:24:57] PHP Warning:  Invalid argument supplied for foreach() in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 35
+[20-Oct-2012 07:24:57] PHP Warning:  end() [<a href='function.end'>function.end</a>]: Passed variable is not an array or object in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 87
+[20-Oct-2012 07:24:57] PHP Warning:  end() [<a href='function.end'>function.end</a>]: Passed variable is not an array or object in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 87
+[20-Oct-2012 07:24:57] PHP Warning:  array_push() [<a href='function.array-push'>function.array-push</a>]: First argument should be an array in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 87
+[20-Oct-2012 07:24:57] PHP Warning:  end() [<a href='function.end'>function.end</a>]: Passed variable is not an array or object in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 87
+[20-Oct-2012 07:24:57] PHP Warning:  array_push() [<a href='function.array-push'>function.array-push</a>]: First argument should be an array in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 87
+[20-Oct-2012 07:24:57] PHP Warning:  end() [<a href='function.end'>function.end</a>]: Passed variable is not an array or object in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 87
+[20-Oct-2012 07:24:57] PHP Warning:  array_push() [<a href='function.array-push'>function.array-push</a>]: First argument should be an array in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 87
+[20-Oct-2012 07:25:58] PHP Warning:  Invalid argument supplied for foreach() in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 35
+[20-Oct-2012 07:25:58] PHP Warning:  end() [<a href='function.end'>function.end</a>]: Passed variable is not an array or object in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 87
+[20-Oct-2012 07:25:58] PHP Warning:  end() [<a href='function.end'>function.end</a>]: Passed variable is not an array or object in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 87
+[20-Oct-2012 07:25:58] PHP Warning:  array_push() [<a href='function.array-push'>function.array-push</a>]: First argument should be an array in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 87
+[20-Oct-2012 07:25:58] PHP Warning:  end() [<a href='function.end'>function.end</a>]: Passed variable is not an array or object in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 87
+[20-Oct-2012 07:25:58] PHP Warning:  array_push() [<a href='function.array-push'>function.array-push</a>]: First argument should be an array in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 87
+[20-Oct-2012 07:25:58] PHP Warning:  end() [<a href='function.end'>function.end</a>]: Passed variable is not an array or object in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 87
+[20-Oct-2012 07:25:58] PHP Warning:  array_push() [<a href='function.array-push'>function.array-push</a>]: First argument should be an array in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 87
+[20-Oct-2012 07:28:04] PHP Warning:  Invalid argument supplied for foreach() in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 35
+[20-Oct-2012 07:28:04] PHP Warning:  end() [<a href='function.end'>function.end</a>]: Passed variable is not an array or object in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 87
+[20-Oct-2012 07:28:04] PHP Warning:  end() [<a href='function.end'>function.end</a>]: Passed variable is not an array or object in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 87
+[20-Oct-2012 07:28:04] PHP Warning:  array_push() [<a href='function.array-push'>function.array-push</a>]: First argument should be an array in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 87
+[20-Oct-2012 07:28:04] PHP Warning:  end() [<a href='function.end'>function.end</a>]: Passed variable is not an array or object in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 87
+[20-Oct-2012 07:28:04] PHP Warning:  array_push() [<a href='function.array-push'>function.array-push</a>]: First argument should be an array in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 87
+[20-Oct-2012 07:28:04] PHP Warning:  end() [<a href='function.end'>function.end</a>]: Passed variable is not an array or object in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 87
+[20-Oct-2012 07:28:04] PHP Warning:  array_push() [<a href='function.array-push'>function.array-push</a>]: First argument should be an array in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 87
+[20-Oct-2012 07:29:51] PHP Warning:  Invalid argument supplied for foreach() in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 35
+[20-Oct-2012 07:29:51] PHP Warning:  end() [<a href='function.end'>function.end</a>]: Passed variable is not an array or object in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 87
+[20-Oct-2012 07:29:51] PHP Warning:  end() [<a href='function.end'>function.end</a>]: Passed variable is not an array or object in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 87
+[20-Oct-2012 07:29:51] PHP Warning:  array_push() [<a href='function.array-push'>function.array-push</a>]: First argument should be an array in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 87
+[20-Oct-2012 07:29:51] PHP Warning:  end() [<a href='function.end'>function.end</a>]: Passed variable is not an array or object in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 87
+[20-Oct-2012 07:29:51] PHP Warning:  array_push() [<a href='function.array-push'>function.array-push</a>]: First argument should be an array in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 87
+[20-Oct-2012 07:29:51] PHP Warning:  end() [<a href='function.end'>function.end</a>]: Passed variable is not an array or object in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 87
+[20-Oct-2012 07:29:51] PHP Warning:  array_push() [<a href='function.array-push'>function.array-push</a>]: First argument should be an array in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 87
+[20-Oct-2012 07:30:16] PHP Warning:  Invalid argument supplied for foreach() in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 35
+[20-Oct-2012 07:30:16] PHP Warning:  end() [<a href='function.end'>function.end</a>]: Passed variable is not an array or object in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 87
+[20-Oct-2012 07:30:16] PHP Warning:  end() [<a href='function.end'>function.end</a>]: Passed variable is not an array or object in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 87
+[20-Oct-2012 07:30:16] PHP Warning:  array_push() [<a href='function.array-push'>function.array-push</a>]: First argument should be an array in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 87
+[20-Oct-2012 07:30:16] PHP Warning:  end() [<a href='function.end'>function.end</a>]: Passed variable is not an array or object in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 87
+[20-Oct-2012 07:30:16] PHP Warning:  array_push() [<a href='function.array-push'>function.array-push</a>]: First argument should be an array in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 87
+[20-Oct-2012 07:30:16] PHP Warning:  end() [<a href='function.end'>function.end</a>]: Passed variable is not an array or object in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 87
+[20-Oct-2012 07:30:16] PHP Warning:  array_push() [<a href='function.array-push'>function.array-push</a>]: First argument should be an array in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 87
+[20-Oct-2012 07:31:13] PHP Warning:  Invalid argument supplied for foreach() in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 35
+[20-Oct-2012 07:31:13] PHP Warning:  end() [<a href='function.end'>function.end</a>]: Passed variable is not an array or object in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 87
+[20-Oct-2012 07:31:13] PHP Warning:  end() [<a href='function.end'>function.end</a>]: Passed variable is not an array or object in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 87
+[20-Oct-2012 07:31:13] PHP Warning:  array_push() [<a href='function.array-push'>function.array-push</a>]: First argument should be an array in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 87
+[20-Oct-2012 07:31:13] PHP Warning:  end() [<a href='function.end'>function.end</a>]: Passed variable is not an array or object in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 87
+[20-Oct-2012 07:31:13] PHP Warning:  array_push() [<a href='function.array-push'>function.array-push</a>]: First argument should be an array in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 87
+[20-Oct-2012 07:31:13] PHP Warning:  end() [<a href='function.end'>function.end</a>]: Passed variable is not an array or object in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 87
+[20-Oct-2012 07:31:13] PHP Warning:  array_push() [<a href='function.array-push'>function.array-push</a>]: First argument should be an array in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 87
+[20-Oct-2012 07:31:56] PHP Warning:  Invalid argument supplied for foreach() in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 35
+[20-Oct-2012 07:31:56] PHP Warning:  end() [<a href='function.end'>function.end</a>]: Passed variable is not an array or object in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 87
+[20-Oct-2012 07:31:56] PHP Warning:  end() [<a href='function.end'>function.end</a>]: Passed variable is not an array or object in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 87
+[20-Oct-2012 07:31:56] PHP Warning:  array_push() [<a href='function.array-push'>function.array-push</a>]: First argument should be an array in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 87
+[20-Oct-2012 07:31:56] PHP Warning:  end() [<a href='function.end'>function.end</a>]: Passed variable is not an array or object in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 87
+[20-Oct-2012 07:31:56] PHP Warning:  array_push() [<a href='function.array-push'>function.array-push</a>]: First argument should be an array in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 87
+[20-Oct-2012 07:31:56] PHP Warning:  end() [<a href='function.end'>function.end</a>]: Passed variable is not an array or object in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 87
+[20-Oct-2012 07:31:56] PHP Warning:  array_push() [<a href='function.array-push'>function.array-push</a>]: First argument should be an array in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 87
+[20-Oct-2012 07:33:33] PHP Warning:  Invalid argument supplied for foreach() in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 35
+[20-Oct-2012 07:33:33] PHP Warning:  end() [<a href='function.end'>function.end</a>]: Passed variable is not an array or object in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 87
+[20-Oct-2012 07:33:33] PHP Warning:  end() [<a href='function.end'>function.end</a>]: Passed variable is not an array or object in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 87
+[20-Oct-2012 07:33:33] PHP Warning:  array_push() [<a href='function.array-push'>function.array-push</a>]: First argument should be an array in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 87
+[20-Oct-2012 07:33:33] PHP Warning:  end() [<a href='function.end'>function.end</a>]: Passed variable is not an array or object in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 87
+[20-Oct-2012 07:33:33] PHP Warning:  array_push() [<a href='function.array-push'>function.array-push</a>]: First argument should be an array in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 87
+[20-Oct-2012 07:33:33] PHP Warning:  end() [<a href='function.end'>function.end</a>]: Passed variable is not an array or object in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 87
+[20-Oct-2012 07:33:33] PHP Warning:  array_push() [<a href='function.array-push'>function.array-push</a>]: First argument should be an array in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 87
+[20-Oct-2012 07:36:12] PHP Warning:  Invalid argument supplied for foreach() in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 35
+[20-Oct-2012 07:36:12] PHP Warning:  end() [<a href='function.end'>function.end</a>]: Passed variable is not an array or object in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 87
+[20-Oct-2012 07:36:12] PHP Warning:  end() [<a href='function.end'>function.end</a>]: Passed variable is not an array or object in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 87
+[20-Oct-2012 07:36:12] PHP Warning:  array_push() [<a href='function.array-push'>function.array-push</a>]: First argument should be an array in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 87
+[20-Oct-2012 07:36:12] PHP Warning:  end() [<a href='function.end'>function.end</a>]: Passed variable is not an array or object in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 87
+[20-Oct-2012 07:36:12] PHP Warning:  array_push() [<a href='function.array-push'>function.array-push</a>]: First argument should be an array in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 87
+[20-Oct-2012 07:36:12] PHP Warning:  end() [<a href='function.end'>function.end</a>]: Passed variable is not an array or object in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 87
+[20-Oct-2012 07:36:12] PHP Warning:  array_push() [<a href='function.array-push'>function.array-push</a>]: First argument should be an array in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 87
+[20-Oct-2012 07:36:54] PHP Warning:  Invalid argument supplied for foreach() in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 35
+[20-Oct-2012 07:36:54] PHP Warning:  end() [<a href='function.end'>function.end</a>]: Passed variable is not an array or object in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 87
+[20-Oct-2012 07:36:54] PHP Warning:  end() [<a href='function.end'>function.end</a>]: Passed variable is not an array or object in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 87
+[20-Oct-2012 07:36:54] PHP Warning:  array_push() [<a href='function.array-push'>function.array-push</a>]: First argument should be an array in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 87
+[20-Oct-2012 07:36:54] PHP Warning:  end() [<a href='function.end'>function.end</a>]: Passed variable is not an array or object in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 87
+[20-Oct-2012 07:36:54] PHP Warning:  array_push() [<a href='function.array-push'>function.array-push</a>]: First argument should be an array in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 87
+[20-Oct-2012 07:36:54] PHP Warning:  end() [<a href='function.end'>function.end</a>]: Passed variable is not an array or object in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 87
+[20-Oct-2012 07:36:54] PHP Warning:  array_push() [<a href='function.array-push'>function.array-push</a>]: First argument should be an array in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 87
+[20-Oct-2012 07:38:00] PHP Warning:  Invalid argument supplied for foreach() in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 35
+[20-Oct-2012 07:38:00] PHP Warning:  end() [<a href='function.end'>function.end</a>]: Passed variable is not an array or object in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 87
+[20-Oct-2012 07:38:00] PHP Warning:  end() [<a href='function.end'>function.end</a>]: Passed variable is not an array or object in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 87
+[20-Oct-2012 07:38:00] PHP Warning:  array_push() [<a href='function.array-push'>function.array-push</a>]: First argument should be an array in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 87
+[20-Oct-2012 07:38:00] PHP Warning:  end() [<a href='function.end'>function.end</a>]: Passed variable is not an array or object in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 87
+[20-Oct-2012 07:38:00] PHP Warning:  array_push() [<a href='function.array-push'>function.array-push</a>]: First argument should be an array in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 87
+[20-Oct-2012 07:38:00] PHP Warning:  end() [<a href='function.end'>function.end</a>]: Passed variable is not an array or object in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 87
+[20-Oct-2012 07:38:00] PHP Warning:  array_push() [<a href='function.array-push'>function.array-push</a>]: First argument should be an array in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 87
+[20-Oct-2012 07:38:45] PHP Warning:  Invalid argument supplied for foreach() in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 35
+[20-Oct-2012 07:38:45] PHP Warning:  end() [<a href='function.end'>function.end</a>]: Passed variable is not an array or object in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 87
+[20-Oct-2012 07:38:45] PHP Warning:  end() [<a href='function.end'>function.end</a>]: Passed variable is not an array or object in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 87
+[20-Oct-2012 07:38:45] PHP Warning:  array_push() [<a href='function.array-push'>function.array-push</a>]: First argument should be an array in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 87
+[20-Oct-2012 07:38:45] PHP Warning:  end() [<a href='function.end'>function.end</a>]: Passed variable is not an array or object in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 87
+[20-Oct-2012 07:38:45] PHP Warning:  array_push() [<a href='function.array-push'>function.array-push</a>]: First argument should be an array in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 87
+[20-Oct-2012 07:38:45] PHP Warning:  end() [<a href='function.end'>function.end</a>]: Passed variable is not an array or object in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 87
+[20-Oct-2012 07:38:45] PHP Warning:  array_push() [<a href='function.array-push'>function.array-push</a>]: First argument should be an array in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 87
+[20-Oct-2012 07:39:26] PHP Warning:  Invalid argument supplied for foreach() in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 35
+[20-Oct-2012 07:39:26] PHP Warning:  end() [<a href='function.end'>function.end</a>]: Passed variable is not an array or object in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 87
+[20-Oct-2012 07:39:26] PHP Warning:  end() [<a href='function.end'>function.end</a>]: Passed variable is not an array or object in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 87
+[20-Oct-2012 07:39:26] PHP Warning:  array_push() [<a href='function.array-push'>function.array-push</a>]: First argument should be an array in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 87
+[20-Oct-2012 07:39:26] PHP Warning:  end() [<a href='function.end'>function.end</a>]: Passed variable is not an array or object in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 87
+[20-Oct-2012 07:39:26] PHP Warning:  array_push() [<a href='function.array-push'>function.array-push</a>]: First argument should be an array in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 87
+[20-Oct-2012 07:39:26] PHP Warning:  end() [<a href='function.end'>function.end</a>]: Passed variable is not an array or object in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 87
+[20-Oct-2012 07:39:26] PHP Warning:  array_push() [<a href='function.array-push'>function.array-push</a>]: First argument should be an array in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 87
+[20-Oct-2012 07:40:51] PHP Warning:  Invalid argument supplied for foreach() in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 35
+[20-Oct-2012 07:40:51] PHP Warning:  end() [<a href='function.end'>function.end</a>]: Passed variable is not an array or object in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 87
+[20-Oct-2012 07:40:51] PHP Warning:  end() [<a href='function.end'>function.end</a>]: Passed variable is not an array or object in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 87
+[20-Oct-2012 07:40:51] PHP Warning:  array_push() [<a href='function.array-push'>function.array-push</a>]: First argument should be an array in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 87
+[20-Oct-2012 07:40:51] PHP Warning:  end() [<a href='function.end'>function.end</a>]: Passed variable is not an array or object in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 87
+[20-Oct-2012 07:40:51] PHP Warning:  array_push() [<a href='function.array-push'>function.array-push</a>]: First argument should be an array in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 87
+[20-Oct-2012 07:40:51] PHP Warning:  end() [<a href='function.end'>function.end</a>]: Passed variable is not an array or object in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 87
+[20-Oct-2012 07:40:51] PHP Warning:  array_push() [<a href='function.array-push'>function.array-push</a>]: First argument should be an array in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 87
+[20-Oct-2012 07:44:15] PHP Warning:  Invalid argument supplied for foreach() in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 35
+[20-Oct-2012 07:44:15] PHP Warning:  end() [<a href='function.end'>function.end</a>]: Passed variable is not an array or object in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 87
+[20-Oct-2012 07:44:15] PHP Warning:  end() [<a href='function.end'>function.end</a>]: Passed variable is not an array or object in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 87
+[20-Oct-2012 07:44:15] PHP Warning:  array_push() [<a href='function.array-push'>function.array-push</a>]: First argument should be an array in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 87
+[20-Oct-2012 07:44:15] PHP Warning:  end() [<a href='function.end'>function.end</a>]: Passed variable is not an array or object in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 87
+[20-Oct-2012 07:44:15] PHP Warning:  array_push() [<a href='function.array-push'>function.array-push</a>]: First argument should be an array in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 87
+[20-Oct-2012 07:44:15] PHP Warning:  end() [<a href='function.end'>function.end</a>]: Passed variable is not an array or object in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 87
+[20-Oct-2012 07:44:15] PHP Warning:  array_push() [<a href='function.array-push'>function.array-push</a>]: First argument should be an array in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 87
+[20-Oct-2012 07:45:06] PHP Warning:  Invalid argument supplied for foreach() in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 35
+[20-Oct-2012 07:45:06] PHP Warning:  end() [<a href='function.end'>function.end</a>]: Passed variable is not an array or object in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 87
+[20-Oct-2012 07:45:06] PHP Warning:  end() [<a href='function.end'>function.end</a>]: Passed variable is not an array or object in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 87
+[20-Oct-2012 07:45:06] PHP Warning:  array_push() [<a href='function.array-push'>function.array-push</a>]: First argument should be an array in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 87
+[20-Oct-2012 07:45:06] PHP Warning:  end() [<a href='function.end'>function.end</a>]: Passed variable is not an array or object in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 87
+[20-Oct-2012 07:45:06] PHP Warning:  array_push() [<a href='function.array-push'>function.array-push</a>]: First argument should be an array in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 87
+[20-Oct-2012 07:45:06] PHP Warning:  end() [<a href='function.end'>function.end</a>]: Passed variable is not an array or object in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 87
+[20-Oct-2012 07:45:06] PHP Warning:  array_push() [<a href='function.array-push'>function.array-push</a>]: First argument should be an array in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 87
+[20-Oct-2012 07:47:07] PHP Warning:  Invalid argument supplied for foreach() in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 35
+[20-Oct-2012 07:47:07] PHP Warning:  end() [<a href='function.end'>function.end</a>]: Passed variable is not an array or object in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 87
+[20-Oct-2012 07:47:07] PHP Warning:  end() [<a href='function.end'>function.end</a>]: Passed variable is not an array or object in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 87
+[20-Oct-2012 07:47:07] PHP Warning:  array_push() [<a href='function.array-push'>function.array-push</a>]: First argument should be an array in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 87
+[20-Oct-2012 07:47:07] PHP Warning:  end() [<a href='function.end'>function.end</a>]: Passed variable is not an array or object in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 87
+[20-Oct-2012 07:47:07] PHP Warning:  array_push() [<a href='function.array-push'>function.array-push</a>]: First argument should be an array in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 87
+[20-Oct-2012 07:47:07] PHP Warning:  end() [<a href='function.end'>function.end</a>]: Passed variable is not an array or object in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 87
+[20-Oct-2012 07:47:07] PHP Warning:  array_push() [<a href='function.array-push'>function.array-push</a>]: First argument should be an array in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 87
+[20-Oct-2012 07:47:41] PHP Warning:  Invalid argument supplied for foreach() in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 35
+[20-Oct-2012 07:47:41] PHP Warning:  end() [<a href='function.end'>function.end</a>]: Passed variable is not an array or object in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 87
+[20-Oct-2012 07:47:41] PHP Warning:  end() [<a href='function.end'>function.end</a>]: Passed variable is not an array or object in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 87
+[20-Oct-2012 07:47:41] PHP Warning:  array_push() [<a href='function.array-push'>function.array-push</a>]: First argument should be an array in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 87
+[20-Oct-2012 07:47:41] PHP Warning:  end() [<a href='function.end'>function.end</a>]: Passed variable is not an array or object in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 87
+[20-Oct-2012 07:47:41] PHP Warning:  array_push() [<a href='function.array-push'>function.array-push</a>]: First argument should be an array in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 87
+[20-Oct-2012 07:47:41] PHP Warning:  end() [<a href='function.end'>function.end</a>]: Passed variable is not an array or object in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 87
+[20-Oct-2012 07:47:41] PHP Warning:  array_push() [<a href='function.array-push'>function.array-push</a>]: First argument should be an array in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 87
+[20-Oct-2012 07:48:47] PHP Warning:  Invalid argument supplied for foreach() in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 35
+[20-Oct-2012 07:48:47] PHP Warning:  end() [<a href='function.end'>function.end</a>]: Passed variable is not an array or object in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 87
+[20-Oct-2012 07:48:47] PHP Warning:  end() [<a href='function.end'>function.end</a>]: Passed variable is not an array or object in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 87
+[20-Oct-2012 07:48:47] PHP Warning:  array_push() [<a href='function.array-push'>function.array-push</a>]: First argument should be an array in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 87
+[20-Oct-2012 07:48:47] PHP Warning:  end() [<a href='function.end'>function.end</a>]: Passed variable is not an array or object in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 87
+[20-Oct-2012 07:48:47] PHP Warning:  array_push() [<a href='function.array-push'>function.array-push</a>]: First argument should be an array in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 87
+[20-Oct-2012 07:48:47] PHP Warning:  end() [<a href='function.end'>function.end</a>]: Passed variable is not an array or object in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 87
+[20-Oct-2012 07:48:47] PHP Warning:  array_push() [<a href='function.array-push'>function.array-push</a>]: First argument should be an array in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 87
+[20-Oct-2012 07:49:04] PHP Warning:  Invalid argument supplied for foreach() in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 35
+[20-Oct-2012 07:49:04] PHP Warning:  end() [<a href='function.end'>function.end</a>]: Passed variable is not an array or object in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 87
+[20-Oct-2012 07:49:04] PHP Warning:  end() [<a href='function.end'>function.end</a>]: Passed variable is not an array or object in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 87
+[20-Oct-2012 07:49:04] PHP Warning:  array_push() [<a href='function.array-push'>function.array-push</a>]: First argument should be an array in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 87
+[20-Oct-2012 07:49:04] PHP Warning:  end() [<a href='function.end'>function.end</a>]: Passed variable is not an array or object in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 87
+[20-Oct-2012 07:49:04] PHP Warning:  array_push() [<a href='function.array-push'>function.array-push</a>]: First argument should be an array in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 87
+[20-Oct-2012 07:49:04] PHP Warning:  end() [<a href='function.end'>function.end</a>]: Passed variable is not an array or object in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 87
+[20-Oct-2012 07:49:04] PHP Warning:  array_push() [<a href='function.array-push'>function.array-push</a>]: First argument should be an array in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 87
+[20-Oct-2012 07:49:35] PHP Warning:  Invalid argument supplied for foreach() in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 35
+[20-Oct-2012 07:49:35] PHP Warning:  end() [<a href='function.end'>function.end</a>]: Passed variable is not an array or object in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 87
+[20-Oct-2012 07:49:35] PHP Warning:  end() [<a href='function.end'>function.end</a>]: Passed variable is not an array or object in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 87
+[20-Oct-2012 07:49:35] PHP Warning:  array_push() [<a href='function.array-push'>function.array-push</a>]: First argument should be an array in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 87
+[20-Oct-2012 07:49:35] PHP Warning:  end() [<a href='function.end'>function.end</a>]: Passed variable is not an array or object in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 87
+[20-Oct-2012 07:49:35] PHP Warning:  array_push() [<a href='function.array-push'>function.array-push</a>]: First argument should be an array in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 87
+[20-Oct-2012 07:49:35] PHP Warning:  end() [<a href='function.end'>function.end</a>]: Passed variable is not an array or object in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 87
+[20-Oct-2012 07:49:35] PHP Warning:  array_push() [<a href='function.array-push'>function.array-push</a>]: First argument should be an array in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 87
+[20-Oct-2012 07:49:37] PHP Warning:  Invalid argument supplied for foreach() in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 35
+[20-Oct-2012 07:49:37] PHP Warning:  end() [<a href='function.end'>function.end</a>]: Passed variable is not an array or object in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 87
+[20-Oct-2012 07:49:37] PHP Warning:  end() [<a href='function.end'>function.end</a>]: Passed variable is not an array or object in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 87
+[20-Oct-2012 07:49:37] PHP Warning:  array_push() [<a href='function.array-push'>function.array-push</a>]: First argument should be an array in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 87
+[20-Oct-2012 07:49:37] PHP Warning:  end() [<a href='function.end'>function.end</a>]: Passed variable is not an array or object in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 87
+[20-Oct-2012 07:49:37] PHP Warning:  array_push() [<a href='function.array-push'>function.array-push</a>]: First argument should be an array in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 87
+[20-Oct-2012 07:49:37] PHP Warning:  end() [<a href='function.end'>function.end</a>]: Passed variable is not an array or object in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 87
+[20-Oct-2012 07:49:37] PHP Warning:  array_push() [<a href='function.array-push'>function.array-push</a>]: First argument should be an array in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 87
+[20-Oct-2012 07:50:06] PHP Warning:  Invalid argument supplied for foreach() in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 35
+[20-Oct-2012 07:50:06] PHP Warning:  end() [<a href='function.end'>function.end</a>]: Passed variable is not an array or object in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 87
+[20-Oct-2012 07:50:06] PHP Warning:  end() [<a href='function.end'>function.end</a>]: Passed variable is not an array or object in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 87
+[20-Oct-2012 07:50:06] PHP Warning:  array_push() [<a href='function.array-push'>function.array-push</a>]: First argument should be an array in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 87
+[20-Oct-2012 07:50:06] PHP Warning:  end() [<a href='function.end'>function.end</a>]: Passed variable is not an array or object in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 87
+[20-Oct-2012 07:50:06] PHP Warning:  array_push() [<a href='function.array-push'>function.array-push</a>]: First argument should be an array in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 87
+[20-Oct-2012 07:50:06] PHP Warning:  end() [<a href='function.end'>function.end</a>]: Passed variable is not an array or object in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 87
+[20-Oct-2012 07:50:06] PHP Warning:  array_push() [<a href='function.array-push'>function.array-push</a>]: First argument should be an array in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 87
+[20-Oct-2012 07:50:36] PHP Warning:  Invalid argument supplied for foreach() in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 35
+[20-Oct-2012 07:50:36] PHP Warning:  end() [<a href='function.end'>function.end</a>]: Passed variable is not an array or object in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 87
+[20-Oct-2012 07:50:36] PHP Warning:  end() [<a href='function.end'>function.end</a>]: Passed variable is not an array or object in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 87
+[20-Oct-2012 07:50:36] PHP Warning:  array_push() [<a href='function.array-push'>function.array-push</a>]: First argument should be an array in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 87
+[20-Oct-2012 07:50:36] PHP Warning:  end() [<a href='function.end'>function.end</a>]: Passed variable is not an array or object in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 87
+[20-Oct-2012 07:50:36] PHP Warning:  array_push() [<a href='function.array-push'>function.array-push</a>]: First argument should be an array in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 87
+[20-Oct-2012 07:50:36] PHP Warning:  end() [<a href='function.end'>function.end</a>]: Passed variable is not an array or object in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 87
+[20-Oct-2012 07:50:36] PHP Warning:  array_push() [<a href='function.array-push'>function.array-push</a>]: First argument should be an array in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 87
+[20-Oct-2012 07:51:26] PHP Warning:  end() [<a href='function.end'>function.end</a>]: Passed variable is not an array or object in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 87
+[20-Oct-2012 07:51:26] PHP Warning:  end() [<a href='function.end'>function.end</a>]: Passed variable is not an array or object in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 87
+[20-Oct-2012 07:51:26] PHP Warning:  array_push() [<a href='function.array-push'>function.array-push</a>]: First argument should be an array in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 87
+[20-Oct-2012 07:51:26] PHP Warning:  end() [<a href='function.end'>function.end</a>]: Passed variable is not an array or object in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 87
+[20-Oct-2012 07:51:26] PHP Warning:  array_push() [<a href='function.array-push'>function.array-push</a>]: First argument should be an array in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 87
+[20-Oct-2012 07:51:26] PHP Warning:  end() [<a href='function.end'>function.end</a>]: Passed variable is not an array or object in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 87
+[20-Oct-2012 07:51:26] PHP Warning:  array_push() [<a href='function.array-push'>function.array-push</a>]: First argument should be an array in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 87
+[20-Oct-2012 07:51:44] PHP Warning:  end() [<a href='function.end'>function.end</a>]: Passed variable is not an array or object in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 87
+[20-Oct-2012 07:51:44] PHP Warning:  end() [<a href='function.end'>function.end</a>]: Passed variable is not an array or object in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 87
+[20-Oct-2012 07:51:44] PHP Warning:  array_push() [<a href='function.array-push'>function.array-push</a>]: First argument should be an array in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 87
+[20-Oct-2012 07:51:44] PHP Warning:  end() [<a href='function.end'>function.end</a>]: Passed variable is not an array or object in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 87
+[20-Oct-2012 07:51:44] PHP Warning:  array_push() [<a href='function.array-push'>function.array-push</a>]: First argument should be an array in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 87
+[20-Oct-2012 07:51:44] PHP Warning:  end() [<a href='function.end'>function.end</a>]: Passed variable is not an array or object in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 87
+[20-Oct-2012 07:51:44] PHP Warning:  array_push() [<a href='function.array-push'>function.array-push</a>]: First argument should be an array in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 87
+[20-Oct-2012 07:51:59] PHP Warning:  Invalid argument supplied for foreach() in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 35
+[20-Oct-2012 07:51:59] PHP Warning:  end() [<a href='function.end'>function.end</a>]: Passed variable is not an array or object in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 87
+[20-Oct-2012 07:51:59] PHP Warning:  end() [<a href='function.end'>function.end</a>]: Passed variable is not an array or object in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 87
+[20-Oct-2012 07:51:59] PHP Warning:  array_push() [<a href='function.array-push'>function.array-push</a>]: First argument should be an array in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 87
+[20-Oct-2012 07:51:59] PHP Warning:  end() [<a href='function.end'>function.end</a>]: Passed variable is not an array or object in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 87
+[20-Oct-2012 07:51:59] PHP Warning:  array_push() [<a href='function.array-push'>function.array-push</a>]: First argument should be an array in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 87
+[20-Oct-2012 07:51:59] PHP Warning:  end() [<a href='function.end'>function.end</a>]: Passed variable is not an array or object in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 87
+[20-Oct-2012 07:51:59] PHP Warning:  array_push() [<a href='function.array-push'>function.array-push</a>]: First argument should be an array in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 87
+[20-Oct-2012 07:52:47] PHP Warning:  Invalid argument supplied for foreach() in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 35
+[20-Oct-2012 07:52:47] PHP Warning:  end() [<a href='function.end'>function.end</a>]: Passed variable is not an array or object in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 87
+[20-Oct-2012 07:52:47] PHP Warning:  end() [<a href='function.end'>function.end</a>]: Passed variable is not an array or object in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 87
+[20-Oct-2012 07:52:47] PHP Warning:  array_push() [<a href='function.array-push'>function.array-push</a>]: First argument should be an array in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 87
+[20-Oct-2012 07:52:47] PHP Warning:  end() [<a href='function.end'>function.end</a>]: Passed variable is not an array or object in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 87
+[20-Oct-2012 07:52:47] PHP Warning:  array_push() [<a href='function.array-push'>function.array-push</a>]: First argument should be an array in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 87
+[20-Oct-2012 07:52:47] PHP Warning:  end() [<a href='function.end'>function.end</a>]: Passed variable is not an array or object in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 87
+[20-Oct-2012 07:52:47] PHP Warning:  array_push() [<a href='function.array-push'>function.array-push</a>]: First argument should be an array in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 87
+[20-Oct-2012 07:54:06] PHP Warning:  Invalid argument supplied for foreach() in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 35
+[20-Oct-2012 07:54:06] PHP Warning:  end() [<a href='function.end'>function.end</a>]: Passed variable is not an array or object in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 87
+[20-Oct-2012 07:54:06] PHP Warning:  end() [<a href='function.end'>function.end</a>]: Passed variable is not an array or object in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 87
+[20-Oct-2012 07:54:06] PHP Warning:  array_push() [<a href='function.array-push'>function.array-push</a>]: First argument should be an array in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 87
+[20-Oct-2012 07:54:06] PHP Warning:  end() [<a href='function.end'>function.end</a>]: Passed variable is not an array or object in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 87
+[20-Oct-2012 07:54:06] PHP Warning:  array_push() [<a href='function.array-push'>function.array-push</a>]: First argument should be an array in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 87
+[20-Oct-2012 07:54:06] PHP Warning:  end() [<a href='function.end'>function.end</a>]: Passed variable is not an array or object in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 87
+[20-Oct-2012 07:54:06] PHP Warning:  array_push() [<a href='function.array-push'>function.array-push</a>]: First argument should be an array in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 87
+[20-Oct-2012 07:54:50] PHP Warning:  Invalid argument supplied for foreach() in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 35
+[20-Oct-2012 07:54:50] PHP Warning:  end() [<a href='function.end'>function.end</a>]: Passed variable is not an array or object in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 87
+[20-Oct-2012 07:54:50] PHP Warning:  end() [<a href='function.end'>function.end</a>]: Passed variable is not an array or object in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 87
+[20-Oct-2012 07:54:50] PHP Warning:  array_push() [<a href='function.array-push'>function.array-push</a>]: First argument should be an array in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 87
+[20-Oct-2012 07:54:50] PHP Warning:  end() [<a href='function.end'>function.end</a>]: Passed variable is not an array or object in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 87
+[20-Oct-2012 07:54:50] PHP Warning:  array_push() [<a href='function.array-push'>function.array-push</a>]: First argument should be an array in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 87
+[20-Oct-2012 07:54:50] PHP Warning:  end() [<a href='function.end'>function.end</a>]: Passed variable is not an array or object in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 87
+[20-Oct-2012 07:54:50] PHP Warning:  array_push() [<a href='function.array-push'>function.array-push</a>]: First argument should be an array in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 87
+[20-Oct-2012 07:57:25] PHP Parse error:  syntax error, unexpected ';' in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 93
+[20-Oct-2012 07:57:30] PHP Parse error:  syntax error, unexpected ';' in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 93
+[20-Oct-2012 07:57:35] PHP Parse error:  syntax error, unexpected ';' in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 93
+[20-Oct-2012 07:58:07] PHP Parse error:  syntax error, unexpected T_DOUBLE_ARROW in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 106

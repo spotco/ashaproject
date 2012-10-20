@@ -1,22 +1,20 @@
 // We're starting at the first field of information
-var currentSlide = "field1";
-var width;
-var height;
+var currentSlide = "field0";
 
 // When the page is ready, add click handlers and start ajax request.
 $(function() {
-	$("#next").click(rotate);
+	$(".next").click(rotate);
 	// Ajax request to pull data from database.
-	$.get("ashadb_insert.php", successFunct, "JSON")
-		.done(successFunct);
+	$.get('ashadb_insert.php')
+		.done(successFunct)
+		.fail(ajaxFailure);
 });
 
 // Runs when the AJAX request was successful
 function successFunct(data) {
 	// TEST CODE - please delete!
-	if(!data) {
-		data =  JSON.parse('{
-    "array": [
+	
+	var	data = eval({"array": [
         {
             "fields": [
                 {
@@ -55,70 +53,82 @@ function successFunct(data) {
             "project_name": "foo",
             "focus": "bar"
         }
-    ]
-}');
-	}
+    ]});
+	$("#container").children().remove();
 
 	for(var k = 0; k < data.array.length; k++ ) {
 
 		//Build structure in container div
-		$(".container").children().remove();
-		var widget = $("<div>").addClass("widget").addClass("span4").appendTo(".container");
-		var photoDiv = $("<div>").addClass("row-fluid").addClass("mainPhoto").appendTo(widget);
+		
+		var widget = $("<div>");
+		widget.addClass("widget").addClass("span4").appendTo("#container");
+		var photoDiv = $("<div>");
+		photoDiv.addClass("row-fluid").addClass("mainPhoto").appendTo(widget);
 		$("<img>").appendTo(photoDiv);
 		$("<h2>").appendTo(widget);
 		$("<h3>").appendTo(widget);
-		$("<p>").appendTo(widget);
+		$("<p>").attr("class", "focus").appendTo(widget);
 		var row = $("<div>").addClass("fluid-row").appendTo(widget);
 		var left = $("<div>").addClass("left").appendTo(row);
 		$("<div>").appendTo(left);
-		$("<p>").attr("id", "next").text("Next <span>&gt;&gt;<span>").appendTo(left);
-
+		var paragraph = $("<p>");
+		paragraph.addClass("next");
+		paragraph.html("Next <span>&gt;&gt;<span>");
+		paragraph.appendTo(left);
+		paragraph.click(rotate);
 
 		// Put in immediate information (name, focus paragraph, photo)
-		$(".widget h2").text(data.array[k].project_name);
-		$(".widget > p").text(data.array[k].focus);
+		$(widget.find("h2")).text(data.array[k].project_name);
+		$(widget.find(".focus")).text(data.array[k].focus);
 		var photoInfo;
 		if (!data.array[k].photo) {
 			photoInfo = "http://placekitten.com/350/200";  // Adorable placeholder image, if use didn't upload one.
 		} else {
 			photoInfo = data.array[k].photo;
 		}
-		$(".widget img").attr("src", photoInfo);
+		$(widget.find("img")).attr("src", photoInfo);
 
 		//Loop over all possible fields of information about project.
 		var array = data.array[k].fields;
-		console.log(array.length);
-		for(var i = 1; i <= array.length; i++){
-			var div = $("<div>").addClass("field" + i).appendTo(($(".widget .left > div"))).hide();
-			if (i == 1) {
+		for(var i = 0; i < array.length; i++){
+			var div = $("<div>").addClass("field" + i).appendTo(($(widget.find(".left > div")))).hide();
+			if (i == 0) {
 				div.show();
 			}
 			var h3 = $("<h3>");
-			h3.text(array[(i - 1)].name)
+			h3.text(array[i].field_name);
 			h3.appendTo(div);
 			var innerDiv = $("<div>").appendTo(div);
-			$("<ul>").appendTo(innerDiv);
-			var detailsArray = array[(i - 1)].details;
+			var ul = $("<ul>");
+			ul.appendTo(innerDiv);
 
 			//For each field, get each bulleted list item and put it into the page.
-			console.log(detailsArray.length);
-			for(var j = 0; j < detailsArray.length; j++) {
-				$("<li>").text(detailsArray[j]).appendTo($(".widget ul"));
+			for(var j = 0; j < array[i].details.length; j++) {
+				$("<li>").text(array[i].details[j]).appendTo(ul);
 			}
 		}
 	}
 }
 
 // Change "slides" of information 
-function rotate() {
-	var num = $(".widget .left > div > div").length
-	$("." + currentSlide).hide();
+function rotate(elem) {
+	console.log($(this).attr("class"));
+	var widget = $(this).parent().parent().parent();
+	var num = $(widget.find(".left > div > div")).length;
+	console.log($(widget).attr("class"));
+	/*console.log(num);*/
+	$(widget.find("." + currentSlide)).hide();
 	var current = parseInt(currentSlide[5]);
 	current++;
-	if(current > num) {
-		current = 1;
+	if(current > num - 1) {
+		current = 0;
 	}
 	currentSlide = "field" + current;
-	$("." + currentSlide).show();
+	$(widget.find("." + currentSlide)).show();
+}
+
+// provided Ajax failure code (displays a useful log when something goes
+// wrong with the Ajax request)
+function ajaxFailure(xhr, status, exception) {
+  console.log(xhr, status, exception);
 }

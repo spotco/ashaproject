@@ -28,13 +28,13 @@ h3 {
 	font-size: 18px;
 }
 
-#next span {
+.next span {
 	font-size: 25px;
 	font-weight: bold;
 	vertical-align: top;
 }
 
-#next {
+.next {
 	float: right;
 	cursor: pointer;
 }
