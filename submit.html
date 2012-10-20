@@ -31,7 +31,32 @@
 	<script>
 
 $(function(){
-	makecombo();
+	
+	var firstcombo = makecombo();
+	var addfield = $('<a style="margin-left:20px;">(Add Another Field)</a>');
+	firstcombo.find(".enterfield").after(addfield);
+	
+	var self = function(){
+		var addfield = $('<a style="margin-left:20px;">(Add Another Field)</a>');
+		var delfield = $('<a style="margin-left:20px;" >(Delete Field)</a>');
+		var new_field = makecombo();
+		new_field.find(".enterfield").after(delfield);
+		new_field.find(".enterfield").after(addfield);
+		$("#fields").append(new_field);
+		delfield.click(function() {
+			new_field.remove();
+		});	
+		addfield.click(self);
+		
+		var position = new_field.position();
+		scroll(0,position.top);
+	}
+	
+	
+	addfield.click(self);
+	$("#fields").append(firstcombo);
+	
+	
 	$("#submit").click(function() {
 		var output = {};
 		output.fields = [];
@@ -40,8 +65,8 @@ $(function(){
 
 		$("#fields > .fieldcombo").each(function(index,e) {
 			e = $(e);
+			field = e.find(".enterfield").val();
 			var field = {};
-			field.field_name =  e.find(".enterfield").val();
 			field.details = [];
 			e.find(".detailfield").each(function(index,e) {
 				e = $(e);
@@ -54,31 +79,36 @@ $(function(){
 		$.post("ashadb_insert.php",{output:jason},function(r) {
 			console.log(r);
 		});
-		console.log(jason);
 	})
 })
 
 function makecombo() {
 	var newcombo = $("<div class='fieldcombo'><hr /></div>");
 	newcombo.append($('<h4>Field:</h4><input class="enterfield" type="text" name="field" />'));
-	var addfield = $('<a style="margin-left:20px;">(Add Another Field)</a>');
-	var adddetail = $('<a>(Add Another Detail)</a>');
-	newcombo.append(addfield);
+	
+	var adddetail = $('<a style="margin-left:25px;">(Add Another Detail)</a>');
 
 	var list = $("<ul>");
-	list.append(get_detail());
+	var detail = get_detail();
+	
+	list.append(detail);
 
 	newcombo.append(list);
+	
 	newcombo.append(adddetail);
 
-	addfield.click(function(){
-		makecombo();
-	});
-
 	adddetail.click(function(){
-		list.append(get_detail());
+		var deldetail = $('<a style="margin-left:20px; vertical-align:-70%;" >(Delete Detail)</a>');
+		var new_detail = get_detail();
+		new_detail.append(deldetail);
+		list.append(new_detail);
+		deldetail.click(function() {
+			new_detail.remove();
+		});
+		var position = new_detail.position();
+		scroll(0,position.top);
 	});
-	$("#fields").append(newcombo);
+	return newcombo;
 }
 
 function get_detail() {

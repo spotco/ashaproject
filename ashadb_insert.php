@@ -9,56 +9,46 @@
         } catch (PDOException $err) {
                 die("Connection to database failed: ".$err->getMessage());
         }
-        // check authentication
-        $auth = isset($_SERVER["AUTH_TYPE"]) && $_SERVER["AUTH_TYPE"] == "UWNetID" && isset($_SERVER["PHP_AUTH_USER"]);
         
 		$json = $_POST["output"];
 		
 		$decoded = json_decode($json,true);
 		
-		
 		//Query to insert given project
-		$insert_proj = $DB->prepare('INSERT INTO '.DBNAME.'.projects (name,focus,image) VALUES (:name,:focus,:image)');
-        $insert_proj->bindValue(":name"            ,$decoded["project_name"]);
+		$insert_proj = $DB->prepare('INSERT INTO '.DBNAME.'.projects (project_name,focus,image) VALUES (:project_name,:focus,:image)');
+        $insert_proj->bindValue(":project_name"            ,$decoded["project_name"]);
         $insert_proj->bindValue(":focus"            ,$decoded["focus"]);
 		$insert_proj->bindValue(":image"            ,$decoded["image"]);
+
 		if(!$insert_proj->execute()) {
                 print "<h1>FAILURE</h1>";
         } else {
                 print "<h1>SUCCESS</h1>";
         }
 		
-		$query_proj = $DB->prepare('Select id from '.DBNAME.'.projects where name=:name and focus=:focus');
-		$query_proj->bindValue(":name"            ,$decoded["project_name"]);
-        $query_proj->bindValue(":focus"            ,$decoded["focus"]);
-		$query_proj->execute();
-		$proj_row = $query_proj->fetch(PDO::FETCH_ASSOC);
-		$p_id=$proj_row[id];
+
+		$p_id=$DB->lastInsertId();;
 		
-		$insert_head = $DB->prepare('INSERT INTO '.DBNAME.'.headers (name,p_id) VALUES (:name,'.$p_id.')');
-		$insert_bull = $DB->prepare('INSERT INTO '.DBNAME.'.bullets (name,h_id) VALUES (:name,:h_id)');
+		$insert_field = $DB->prepare('INSERT INTO '.DBNAME.'.fields (field_name,for_key_p_id) VALUES (:field_name,'.$p_id.')');
+		$insert_detail = $DB->prepare('INSERT INTO '.DBNAME.'.details (detail_name,for_key_f_id) VALUES (:detail_name,:f_id)');
 		foreach ($decoded["fields"] as $field) {
 			if($field!="") {
-				$insert_head->bindValue(":name"            ,$field["field_name"]);
-				if(!$insert_head->execute()) {
+				$insert_field->bindValue(":field_name"            ,$field["field_name"]);
+				if(!$insert_field->execute()) {
 						print "<h1>FAILURE</h1>";
 				} else {
 						print "<h1>SUCCESS</h1>";
 				}
 				
-				$query_head = $DB->prepare('Select h_id from '.DBNAME.'.headers where name=:name and p_id=:p_id');
-				$query_head->bindValue(":name"            ,$field["field_name"]);
-				$query_head->bindValue(":p_id"            ,$p_id);
-				$query_head->execute();
-				$head_row = $query_head->fetch(PDO::FETCH_ASSOC);
-				$h_id=$head_row[h_id];
+
+				$f_id=$DB->lastInsertId();;
 				
 				
 				foreach ($field["details"] as $detail) {
 					if($detail!="") {
-						$insert_bull->bindValue(":name"            ,$detail);
-						$insert_bull->bindValue(":h_id"            ,$h_id);
-						if(!$insert_bull->execute()) {
+						$insert_detail->bindValue(":detail_name"            ,$detail);
+						$insert_detail->bindValue(":f_id"            ,$f_id);
+						if(!$insert_detail->execute()) {
 								print "<h1>FAILURE</h1>";
 						} else {
 								print "<h1>SUCCESS</h1>";

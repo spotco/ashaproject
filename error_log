@@ -44,3 +44,64 @@
 [20-Oct-2012 02:08:21] PHP Warning:  Invalid argument supplied for foreach() in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 40
 [20-Oct-2012 02:09:37] PHP Warning:  Invalid argument supplied for foreach() in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 40
 [20-Oct-2012 02:09:46] PHP Warning:  Invalid argument supplied for foreach() in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 40
+[20-Oct-2012 02:10:25] PHP Warning:  Invalid argument supplied for foreach() in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 40
+[20-Oct-2012 02:12:45] PHP Warning:  Invalid argument supplied for foreach() in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 40
+[20-Oct-2012 02:13:25] PHP Warning:  Invalid argument supplied for foreach() in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 40
+[20-Oct-2012 02:13:27] PHP Warning:  Invalid argument supplied for foreach() in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 40
+[20-Oct-2012 02:15:42] PHP Warning:  Invalid argument supplied for foreach() in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 40
+[20-Oct-2012 02:23:02] PHP Warning:  Invalid argument supplied for foreach() in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 40
+[20-Oct-2012 02:23:59] PHP Warning:  Invalid argument supplied for foreach() in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 40
+[20-Oct-2012 02:54:11] PHP Warning:  PDOStatement::execute() [<a href='pdostatement.execute'>pdostatement.execute</a>]: SQLSTATE[HY093]: Invalid parameter number: parameter was not defined in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 61
+[20-Oct-2012 02:54:11] PHP Warning:  PDOStatement::execute() [<a href='pdostatement.execute'>pdostatement.execute</a>]: SQLSTATE[HY093]: Invalid parameter number: parameter was not defined in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 61
+[20-Oct-2012 02:54:11] PHP Warning:  PDOStatement::execute() [<a href='pdostatement.execute'>pdostatement.execute</a>]: SQLSTATE[HY093]: Invalid parameter number: parameter was not defined in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 61
+[20-Oct-2012 02:55:04] PHP Warning:  PDOStatement::execute() [<a href='pdostatement.execute'>pdostatement.execute</a>]: SQLSTATE[HY093]: Invalid parameter number: parameter was not defined in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 61
+[20-Oct-2012 02:55:04] PHP Warning:  PDOStatement::execute() [<a href='pdostatement.execute'>pdostatement.execute</a>]: SQLSTATE[HY093]: Invalid parameter number: parameter was not defined in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 61
+[20-Oct-2012 02:55:04] PHP Warning:  PDOStatement::execute() [<a href='pdostatement.execute'>pdostatement.execute</a>]: SQLSTATE[HY093]: Invalid parameter number: parameter was not defined in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 61
+[20-Oct-2012 02:55:09] PHP Warning:  Invalid argument supplied for foreach() in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 40
+[20-Oct-2012 03:03:25] PHP Warning:  Invalid argument supplied for foreach() in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 40
+[20-Oct-2012 03:04:49] PHP Warning:  Invalid argument supplied for foreach() in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 40
+[20-Oct-2012 03:04:54] PHP Warning:  Invalid argument supplied for foreach() in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 40
+[20-Oct-2012 03:05:32] PHP Warning:  Invalid argument supplied for foreach() in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 40
+[20-Oct-2012 03:06:25] PHP Warning:  Invalid argument supplied for foreach() in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 40
+[20-Oct-2012 03:06:31] PHP Warning:  Invalid argument supplied for foreach() in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 40
+[20-Oct-2012 03:07:55] PHP Warning:  Invalid argument supplied for foreach() in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 40
+[20-Oct-2012 03:07:57] PHP Warning:  Invalid argument supplied for foreach() in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 40
+[20-Oct-2012 03:16:27] PHP Warning:  Invalid argument supplied for foreach() in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 39
+[20-Oct-2012 03:18:27] PHP Warning:  Invalid argument supplied for foreach() in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 39
+[20-Oct-2012 03:22:28] PHP Warning:  Invalid argument supplied for foreach() in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 36
+[20-Oct-2012 03:22:35] PHP Warning:  Invalid argument supplied for foreach() in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 36
+[20-Oct-2012 03:22:49] PHP Warning:  Invalid argument supplied for foreach() in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 36
+[20-Oct-2012 03:23:07] PHP Warning:  Invalid argument supplied for foreach() in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 36
+[20-Oct-2012 03:25:33] PHP Parse error:  syntax error, unexpected ';' in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 19
+[20-Oct-2012 03:27:18] PHP Warning:  Invalid argument supplied for foreach() in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 37
+[20-Oct-2012 03:36:36] PHP Warning:  Invalid argument supplied for foreach() in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 40
+[20-Oct-2012 03:37:20] PHP Warning:  Invalid argument supplied for foreach() in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 40
+[20-Oct-2012 03:37:46] PHP Warning:  Invalid argument supplied for foreach() in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 40
+[20-Oct-2012 03:38:40] PHP Warning:  Invalid argument supplied for foreach() in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 40
+[20-Oct-2012 03:38:42] PHP Warning:  Invalid argument supplied for foreach() in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 40
+[20-Oct-2012 03:39:39] PHP Warning:  Invalid argument supplied for foreach() in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 40
+[20-Oct-2012 03:42:24] PHP Warning:  Invalid argument supplied for foreach() in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 40
+[20-Oct-2012 03:42:34] PHP Warning:  Invalid argument supplied for foreach() in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 40
+[20-Oct-2012 03:43:01] PHP Warning:  Invalid argument supplied for foreach() in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 40
+[20-Oct-2012 03:43:08] PHP Warning:  Invalid argument supplied for foreach() in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 40
+[20-Oct-2012 03:43:20] PHP Warning:  Invalid argument supplied for foreach() in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 40
+[20-Oct-2012 03:43:42] PHP Warning:  Invalid argument supplied for foreach() in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 40
+[20-Oct-2012 03:43:44] PHP Warning:  Invalid argument supplied for foreach() in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 40
+[20-Oct-2012 03:43:45] PHP Warning:  Invalid argument supplied for foreach() in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 40
+[20-Oct-2012 03:44:47] PHP Warning:  Invalid argument supplied for foreach() in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 42
+[20-Oct-2012 03:45:20] PHP Warning:  Invalid argument supplied for foreach() in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 42
+[20-Oct-2012 03:46:30] PHP Warning:  Invalid argument supplied for foreach() in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 42
+[20-Oct-2012 03:49:28] PHP Warning:  Invalid argument supplied for foreach() in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 42
+[20-Oct-2012 03:51:54] PHP Warning:  Invalid argument supplied for foreach() in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 42
+[20-Oct-2012 03:57:01] PHP Warning:  Invalid argument supplied for foreach() in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 42
+[20-Oct-2012 03:57:40] PHP Warning:  Invalid argument supplied for foreach() in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 42
+[20-Oct-2012 03:58:21] PHP Warning:  Invalid argument supplied for foreach() in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 39
+[20-Oct-2012 03:59:00] PHP Warning:  Invalid argument supplied for foreach() in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 39
+[20-Oct-2012 04:10:04] PHP Fatal error:  Call to a member function lastInsertId() on a non-object in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 30
+[20-Oct-2012 04:10:10] PHP Fatal error:  Call to a member function lastInsertId() on a non-object in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 30
+[20-Oct-2012 04:10:10] PHP Fatal error:  Call to a member function lastInsertId() on a non-object in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 30
+[20-Oct-2012 04:14:36] PHP Warning:  Invalid argument supplied for foreach() in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 34
+[20-Oct-2012 04:18:37] PHP Warning:  Invalid argument supplied for foreach() in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 34
+[20-Oct-2012 04:21:44] PHP Warning:  Invalid argument supplied for foreach() in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 34
+[20-Oct-2012 04:42:00] PHP Warning:  Invalid argument supplied for foreach() in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 34
+[20-Oct-2012 04:45:55] PHP Warning:  Invalid argument supplied for foreach() in /home/spotco/public_html/ashaproj/ashadb_insert.php on line 34
