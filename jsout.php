@@ -1,5 +1,5 @@
 <?php
-//delete from projects;delete from fields; delete from details;
+//sdelete from projects;delete from fields; delete from details;
 
 $SERVER = "localhost";
 $USER = "spotco_sql";
@@ -18,13 +18,17 @@ foreach ($projects as $projects_array_index => $project) {
 	$img_url = $project["image_url"];
 	$img_style = $project["image_style"];
 	$date = $project["date"];
+	$video = $project["video"];
+	$p_id = $project["p_id"];
 
 	$project_o = array();
 	$project_o["project_name"] = $project_name;
+	$project_o["p_id"] = $p_id;
 	$project_o["focus"] = $focus;
 	$project_o["img_url"] = $img_url;
 	$project_o["img_style"] = $img_style;
 	$project_o["date"] = $date;
+	$project_o["video"] = $video;
 	$project_o_fields = array();	
 
 	$p_id = $project["p_id"];
@@ -60,6 +64,11 @@ foreach ($projects as $projects_array_index => $project) {
 $js_o = array();
 $js_o["array"] = $projects_o;
 $jsout = json_encode($js_o);
-echo $jsout;
+
+if (!$store) {
+	echo $jsout;
+} else {
+	$store = $jsout;
+}
 
 ?>

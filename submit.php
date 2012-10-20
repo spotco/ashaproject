@@ -31,7 +31,7 @@
 
 	</style>
 	<script>
-
+var arrayOfDefaults = ["Sustainability / Future Vision", "Ongoing Work", "Strength / Success Stories", "Challenges"];
 
 function image_loader() {
 	var TAR_WID = 350;
@@ -102,7 +102,7 @@ $(function(){
 	$("#fields").append(firstcombo);
 	$("#submit").click(function() {
 		var output = {};
-
+		output.video = $("#video").val();
 		output.img_url = $("#imgurl").val();
 		output.img_style = $("#preview").attr("style");
 
@@ -186,6 +186,11 @@ function get_detail() {
 				<button class="btn btn-primary" id="submit">Submit</button>
 			</div>
 			<div class="span2">
+
+				<h3>YouTube Video (Optional)</h3>
+				<p>Please include the URL to the YouTube video (Be sure it's the embedded URL!)</p>
+				<input type="text" size="7" id="video" name="video" />
+
 				<h3>Image URL(Optional)</h3>
 				<p>Click load, then drag to crop image</p>
 				<input type="text" size="7" id="imgurl" name="imgurl"/>

@@ -28,7 +28,7 @@
 		
 		$build_array = array();
 		foreach($projects as $project) {
-			$temp = array("project_name"=>$project["project_name"],"focus"=>$project["focus"],"image_url"=>$project["image_url"],"image_style"=>$project["image_style"],"fields"=>array());
+			$temp = array("project_name"=>$project["project_name"],"focus"=>$project["focus"],"image_url"=>$project["image_url"],"image_style"=>$project["image_style"],"video"=>$project["video"],"fields"=>array());
 			//print_r($temp);
 			$build_array[] = $temp;
 			$select_field->bindValue(":p_id"                  ,$project["p_id"]);

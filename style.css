@@ -1,10 +1,18 @@
-#container {
-	padding-top: 60px;
-	padding-bottom: 40px;
+.video {
+	margin-top: 15px;
+}
+
+#logo {
+	text-align: center;
 }
 
 #mainPhoto {
 	overflow:hidden;
+}
+
+#links {
+	width: 500px;
+	float: right;
 }
 
 #mainPhoto img {

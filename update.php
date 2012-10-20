@@ -1,4 +1,5 @@
-<?php   $SERVER = "localhost";
+<?php  
+		$SERVER = "localhost";
         $USER = "spotco_sql";
         $PASSWORD = "dododo";
         $DBNAME = "spotco_ashaproject";
@@ -9,18 +10,26 @@
         } catch (PDOException $err) {
                 die("Connection to database failed: ".$err->getMessage());
         }
+		
+		include 'asha_delete.php';
+		
+		
         
 		$json = $_POST["output"];
+		$p_id = $_POST["p_id"];
+		
+		delete_data($p_id);
 		
 		$decoded = json_decode($json,true);
 		print_r($decoded);
 		//Query to insert given project
-		$insert_proj = $DB->prepare('INSERT INTO '.DBNAME.'.projects (project_name,focus,image_url,image_style,video) VALUES (:project_name,:focus,:img_url, :img_style, :video)');
+		$insert_proj = $DB->prepare('INSERT INTO '.DBNAME.'.projects (project_name,focus,image_url,image_style,video,p_id) VALUES (:project_name,:focus,:img_url, :img_style, :video, :p_id)');
         $insert_proj->bindValue(":project_name"            ,$decoded["project_name"]);
         $insert_proj->bindValue(":focus"            ,$decoded["focus"]);
 		$insert_proj->bindValue(":img_url"            ,$decoded["img_url"]);
 		$insert_proj->bindValue(":img_style"            ,$decoded["img_style"]);
 		$insert_proj->bindValue(":video"            ,$decoded["video"]);
+		$insert_proj->bindValue(":p_id"            ,$p_id);
 
 		if(!$insert_proj->execute()) {
                 print "<h1>FAILURE</h1>";

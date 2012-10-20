@@ -7,27 +7,48 @@
 		<script src="bootstrap/js/bootstrap.min.js"></script>
 		<link rel="stylesheet" type="text/css" href="style.css"/>
 		<script src="scripts.js"></script>
+		<style type="text/css">
+.nav > li {
+	height:60px;
+}
+.nav > li > a {
+	margin-top:20px;
+	font-size:30px;
+}
+		</style>
 	</head>
 
 	<body>
-		<div class="navbar navbar-inverse navbar-fixed-top">
-    		<div class="navbar-inner">
-    			<div class="navcontainer">
-    				<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-					</a>
-					<a class="brand" href="#">Project name</a>
-					<div class="nav-collapse collapse">
-						<ul class="nav">
-							<li class="active"><a href="#">Home</a></li>
-							<li><a href="#about">About</a></li>
-							<li><a href="#contact">Contact</a></li>
-						</ul>
-					</div><!--/.nav-collapse -->
+
+	<div class="navbar navbar-fixed-top">
+		<div class="navbar-inner">
+
+				<a class="brand" href="#">
+					<div id="logo" style="float:left;">
+						<img src="http://www.ashanet.org/graphics/asha_logo.png" style="height:60px;" alt="Asha for Education"/>
+					</div>
+				</a>
+				
+				<div class="nav-collapse collapse">
+					<ul class="nav">
+						<li><a href="index.html">Home</a></li>
+						<li><a href="submit.php">Submit</a></li>
+						<li><a href="edit.php">Edit</a></li>
+					</ul>
 				</div>
-			</div>
+		</div>
+	</div>
+
+	<div style="margin-top:95px"></div>
+
+
+
+		<div id="links">
+			<h2> Important Links </h2>
+			<ul>
+				<li>Submit a project <a href="submit.php">here</a></li>
+				<li>Edit a current project <a href="edit.php">here</a></li>
+			</ul>
 		</div>
 
 		<div id="container" class="container-fluid">

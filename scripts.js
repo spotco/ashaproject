@@ -1,7 +1,7 @@
 // We're starting at the first field of information
 var currentSlide = "field0";
 var currentProject = 0;
-// Rotation time in milliseconds.
+// Rotation time in milliseconds.  Currently set to half an hour
 var timer = setInterval(nextProject, 1800000);
 
 
@@ -33,6 +33,9 @@ function successFunct(data) {
 		var photoDiv = $("<div>");
 		photoDiv.addClass("row-fluid").addClass("mainPhoto").appendTo(widget).attr({"style": "width: 350px;height: 200px;overflow: hidden;"});
 		$("<img>").appendTo(photoDiv);
+		var videoDiv = $("<div>");
+		videoDiv.addClass("video");
+		videoDiv.appendTo(widget);
 		$("<h2>").appendTo(widget);
 		$("<p>").attr("class", "focus").appendTo(widget);
 		var row = $("<div>").addClass("fluid-row").appendTo(widget);
@@ -43,7 +46,7 @@ function successFunct(data) {
 
 		var p1 = $("<p>");
 		p1.addClass("previous");
-		p1.html("Previous <span>&lt;&lt;</span>");
+		p1.html("Prev <span>&lt;&lt;</span>");
 		p1.appendTo(left);
 		p1.click(rotateBack);
 
@@ -62,6 +65,11 @@ function successFunct(data) {
 			photoInfo = "http://placekitten.com/350/200";  // Adorable placeholder image, if use didn't upload one.
 		} else {
 			photoInfo = data.array[k].img_url;
+		}
+
+		console.log(data.array[k].video);
+		if (data.array[k].video) {
+			videoDiv.html("<iframe width='350' height='315' src="+ data.array[k].video +" frameborder='0' allowfullscreen></iframe>");
 		}
 
 		var imageAndProperties = $(widget.find("img"));
