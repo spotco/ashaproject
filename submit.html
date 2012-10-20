@@ -65,8 +65,8 @@ $(function(){
 
 		$("#fields > .fieldcombo").each(function(index,e) {
 			e = $(e);
-			field = e.find(".enterfield").val();
 			var field = {};
+			field.field_name =e.find(".enterfield").val();
 			field.details = [];
 			e.find(".detailfield").each(function(index,e) {
 				e = $(e);
@@ -79,6 +79,7 @@ $(function(){
 		$.post("ashadb_insert.php",{output:jason},function(r) {
 			console.log(r);
 		});
+		console.log(jason);
 	})
 })
 
@@ -126,17 +127,22 @@ function get_detail() {
 		<h1>Project Upload</h1>
 		<hr />
 		<div class="row">
-			<div class="span12">
+			<div class="span8">
 				<h2>Project Title</h2>
 				<input type="text" id="project" name="project"/><br>
 				<h3>Focus</h3>
 				<textarea rows="2" id="focus" name="focus"  ></textarea><br>
-
+			</div>
+			<div class="span4">
+				<h3>Image upload</h3>
+			</div>
+		</div>
+		<div class="row">
+			<div class="span12">
 				<div id="fields">
 				</div>
 
 				<button class="btn btn-primary" id="submit">Submit</button>
-
 			</div>
 		</div>
 	</div>

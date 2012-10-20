@@ -29,11 +29,12 @@
 
 		$p_id=$DB->lastInsertId();;
 		
-		$insert_field = $DB->prepare('INSERT INTO '.DBNAME.'.fields (field_name,for_key_p_id) VALUES (:field_name,'.$p_id.')');
+		$insert_field = $DB->prepare('INSERT INTO '.DBNAME.'.fields (field_name,for_key_p_id) VALUES (:field_name, :p_id)');
 		$insert_detail = $DB->prepare('INSERT INTO '.DBNAME.'.details (detail_name,for_key_f_id) VALUES (:detail_name,:f_id)');
 		foreach ($decoded["fields"] as $field) {
 			if($field!="") {
 				$insert_field->bindValue(":field_name"            ,$field["field_name"]);
+				$insert_field->bindValue(":p_id"            ,$p_id);
 				if(!$insert_field->execute()) {
 						print "<h1>FAILURE</h1>";
 				} else {
