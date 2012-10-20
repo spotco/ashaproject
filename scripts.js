@@ -10,48 +10,7 @@ $(function() {
 
 // Runs when the AJAX request was successful
 function successFunct(data) {
-	// TEST CODE - please delete!
-	var data = {"array": [{"img_url":"https://lh3.googleusercontent.com/-wFK3xleOSdo/T_gNnQSN5fI/AAAAAAAAARU/N8VVN2l0WSc/s480/trinita.jpg","img_style":"max-width: none; width: 350px; height: 263px; margin-left: 0px; margin-top: -48px;","fields":[{"field_name":"Field 1! ","details":["Detail 1","Detail 2","Detail 3"]},{"field_name":"Field 2","details":["Detail 1","Detail 2"]}],"project_name":"Project Title Of Awesome","focus":"Focus grouuup"}]}
-	var	data2 = {"array": [
-        {
-            "fields": [
-                {
-                    "field_name": "testing more stuff",
-                    "details": [
-                        "lolstuf",
-                        "lolstufffffls cool"
-                    ]
-                },
-                {
-                    "field_name": "so much stuff",
-                    "details": [
-                        "lkj sdoifj e"
-                    ]
-                }
-            ],
-            "project_name": "lolwat",
-            "focus": "testing"
-        },
-        {
-            "fields": [
-                {
-                    "field_name": "stuff2",
-                    "details": [
-                        "hello",
-                        "cats"
-                    ]
-                },
-                {
-                    "field_name": "om nom",
-                    "details": [
-                        "step 1"
-                    ]
-                }
-            ],
-            "project_name": "foo",
-            "focus": "bar"
-        }
-    ]};
+	
 	$("#container").children().remove();
 
 	for(var k = 0; k < data.array.length; k++ ) {
@@ -89,19 +48,7 @@ function successFunct(data) {
 		var imageAndProperties = $(widget.find("img"));
 		imageAndProperties.attr("src", photoInfo);
 		var uglyString =  data.array[k].img_style;
-		var uglyString2 = uglyString.split(";");
-		var final = "";
-		for (var m = 0; m < uglyString2.length - 1; m++) {
-			var old = imageAndProperties.attr("style");
-			var valuePair = uglyString2[m].split(":");
-			imageAndProperties.css({old + "," + valuePair[0] + ":" + valuePair[1]});
-			//final += '"' + valuePair[0].trim() + "': '" + valuePair[1].trim() + "', ";
-		}
-		//final = final.substring(0, (final.length -2));
-		//final = '{' + final + '}';
-		//console.log(final);
-		
-		//console.log(imageAndProperties);
+		imageAndProperties.attr("style", uglyString);
 		//Loop over all possible fields of information about project.
 		var array = data.array[k].fields;
 		for(var i = 0; i < array.length; i++){
