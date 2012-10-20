@@ -38,30 +38,32 @@
 		$insert_head = $DB->prepare('INSERT INTO '.DBNAME.'.headers (name,p_id) VALUES (:name,'.$p_id.')');
 		$insert_bull = $DB->prepare('INSERT INTO '.DBNAME.'.bullets (name,h_id) VALUES (:name,:h_id)');
 		foreach ($decoded["fields"] as $field) {
-			
-			$insert_head->bindValue(":name"            ,$field["name"]);
-			if(!$insert_head->execute()) {
-					print "<h1>FAILURE</h1>";
-			} else {
-					print "<h1>SUCCESS</h1>";
-			}
-			
-			$query_head = $DB->prepare('Select h_id from '.DBNAME.'.headers where name=:name and p_id=:p_id');
-			$query_head->bindValue(":name"            ,$field["name"]);
-			$query_head->bindValue(":p_id"            ,$p_id);
-			$query_head->execute();
-			$head_row = $query_head->fetch(PDO::FETCH_ASSOC);
-			$h_id=$head_row[h_id];
-			
-			
-			foreach ($field["details"] as $detail) {
-				
-				$insert_bull->bindValue(":name"            ,$detail);
-				$insert_bull->bindValue(":h_id"            ,$h_id);
-				if(!$insert_bull->execute()) {
+			if($field!="") {
+				$insert_head->bindValue(":name"            ,$field["field_name"]);
+				if(!$insert_head->execute()) {
 						print "<h1>FAILURE</h1>";
 				} else {
 						print "<h1>SUCCESS</h1>";
+				}
+				
+				$query_head = $DB->prepare('Select h_id from '.DBNAME.'.headers where name=:name and p_id=:p_id');
+				$query_head->bindValue(":name"            ,$field["field_name"]);
+				$query_head->bindValue(":p_id"            ,$p_id);
+				$query_head->execute();
+				$head_row = $query_head->fetch(PDO::FETCH_ASSOC);
+				$h_id=$head_row[h_id];
+				
+				
+				foreach ($field["details"] as $detail) {
+					if($detail!="") {
+						$insert_bull->bindValue(":name"            ,$detail);
+						$insert_bull->bindValue(":h_id"            ,$h_id);
+						if(!$insert_bull->execute()) {
+								print "<h1>FAILURE</h1>";
+						} else {
+								print "<h1>SUCCESS</h1>";
+						}
+					}
 				}
 			}
 		}

@@ -3,14 +3,15 @@ var currentSlide = "field1";
 $(function() {
 	$("#next").click(rotate);
 	// Ajax request to pull data from database.
-	$.get() {
-		url: "ashadb_insert.php",
-		success: successFunct, 
-		dataType: "JSON"
-	}
+	$.get("ashadb_insert.php", successFunct, "JSON")
+		.done(successFunct)
 });
 
 function successFunct(data) {
+	if(!data) {
+		data =  JSON.parse('{"fields"{"field_name":"sadsad","details""sadsa"]}],"project_name":"asdsa","focus":"asd"}');
+	}
+
 	$(".widget h1").text(data.project_name);
 	$(".widget > p").text(data.focus);
 	$(".widget img").attr("src", data.photo);

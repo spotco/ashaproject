@@ -17,7 +17,7 @@
 	width: 50% !important;
 }
 #focus {
-
+	width: 40%;
 }
 .more {
 	cursor:pointer;
@@ -40,8 +40,8 @@ $(function(){
 
 		$("#fields > .fieldcombo").each(function(index,e) {
 			e = $(e);
-			field = e.find(".enterfield").val();
 			var field = {};
+			field.field_name =  e.find(".enterfield").val();
 			field.details = [];
 			e.find(".detailfield").each(function(index,e) {
 				e = $(e);
@@ -100,7 +100,7 @@ function get_detail() {
 				<h2>Project Title</h2>
 				<input type="text" id="project" name="project"/><br>
 				<h3>Focus</h3>
-				<input id="focus" type="text" name="focus" /><br>
+				<textarea rows="2" id="focus" name="focus"  ></textarea><br>
 
 				<div id="fields">
 				</div>
