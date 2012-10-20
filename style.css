@@ -3,28 +3,65 @@
 	padding-bottom: 40px;
 }
 
-.widget img {
-	width: 250px;
-	float: right;
+#mainPhoto {
+	overflow:hidden;
+}
+
+#mainPhoto img {
+	margin-top: -100px;
 }
 
 .column {
 	float: left;
 }
- /*
+
 .widget {
-	width: 50%;
-	border: 1px solid black;
-	overflow: hidden;
-	padding: .5em;
+	box-shadow: 0 1px 3px rgba(34, 25, 25, 0.4);
+	padding:10px;
 }
 
 .widget h2 {
 	text-align: center;
 }
 
-.column {
-	width: 48%;
-	float: left;
-	margin: 1%;
-}  */
+h3 {
+	font-size: 18px;
+}
+
+#next span {
+	font-size: 25px;
+	font-weight: bold;
+	vertical-align: top;
+}
+
+#next {
+	float: right;
+	cursor: pointer;
+}
+
+.left ul {
+	height: 80px;
+}
+
+.widget > p, .field1 > div, .field2 > div, .field3 > div, .field4 > div {
+	overflow: auto;
+} 
+
+.left ul {
+	padding-left: .2em;
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+    height: 12px;
+}
+ 
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    border-radius: 10px;
+}
+ 
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+}

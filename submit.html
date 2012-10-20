@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -5,6 +6,89 @@
 	<script src="jquery.js"></script>
 	<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
 	<script src="bootstrap/js/bootstrap.min.js"></script>
+	<style type="text/css">
+.fieldcombo {
+	margin-bottom: 50px;
+	margin-top: 50px;
+}
+.enterfield,#project  {
+	font-size: 30px !important;
+	height:35px !important;
+	width: 50% !important;
+}
+#focus {
+
+}
+.more {
+	cursor:pointer;
+	margin:10px;
+}
+.detailfield {
+	width:40%;
+}
+
+	</style>
+	<script>
+
+$(function(){
+	makecombo();
+	$("#submit").click(function() {
+		var output = {};
+		output.fields = [];
+		output.project_name = $("#project").val();
+		output.focus = $("#focus").val();
+
+		$("#fields > .fieldcombo").each(function(index,e) {
+			e = $(e);
+			field = e.find(".enterfield").val();
+			var field = {};
+			field.details = [];
+			e.find(".detailfield").each(function(index,e) {
+				e = $(e);
+				field.details.push(e.val());
+			});
+			output.fields.push(field);
+		})
+
+		var jason = JSON.stringify(output);
+		$.post("ashadb_insert.php",{output:jason},function(r) {
+			console.log(r);
+		});
+		console.log(jason);
+	})
+})
+
+function makecombo() {
+	var newcombo = $("<div class='fieldcombo'><hr /></div>");
+	newcombo.append($('<h4>Field:</h4><input class="enterfield" type="text" name="field" />'));
+	var addfield = $('<a style="margin-left:20px;">(Add Another Field)</a>');
+	var adddetail = $('<a>(Add Another Detail)</a>');
+	newcombo.append(addfield);
+
+	var list = $("<ul>");
+	list.append(get_detail());
+
+	newcombo.append(list);
+	newcombo.append(adddetail);
+
+	addfield.click(function(){
+		makecombo();
+	});
+
+	adddetail.click(function(){
+		list.append(get_detail());
+	});
+	$("#fields").append(newcombo);
+}
+
+function get_detail() {
+	var li = $("<li>");
+	li.append($('<h5>Details</h5>'));
+	li.append($('<textarea cols="10" rows="2" class="detailfield"></textarea>'));
+	return li;
+}
+
+	</script>
 </head>
 <body>
 	
@@ -12,12 +96,18 @@
 		<h1>Project Upload</h1>
 		<hr />
 		<div class="row">
-			<form action="" method="POST">
-				<div class="span12">
-					<h2>Project Title</h2>
-					<input type="text" size="15" />
+			<div class="span12">
+				<h2>Project Title</h2>
+				<input type="text" id="project" name="project"/><br>
+				<h3>Focus</h3>
+				<input id="focus" type="text" name="focus" /><br>
+
+				<div id="fields">
 				</div>
-			</form>
+
+				<button class="btn btn-primary" id="submit">Submit</button>
+
+			</div>
 		</div>
 	</div>
 </body>
