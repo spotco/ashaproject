@@ -1,0 +1,30 @@
+#container {
+	padding-top: 60px;
+	padding-bottom: 40px;
+}
+
+.widget img {
+	width: 250px;
+	float: right;
+}
+
+.column {
+	float: left;
+}
+ /*
+.widget {
+	width: 50%;
+	border: 1px solid black;
+	overflow: hidden;
+	padding: .5em;
+}
+
+.widget h2 {
+	text-align: center;
+}
+
+.column {
+	width: 48%;
+	float: left;
+	margin: 1%;
+}  */
