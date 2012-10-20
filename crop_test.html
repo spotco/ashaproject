@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> Asha for Education Projects</title>
+		
+		<script src="jquery.js"></script>
+		<script src="jcrop/js/jquery.Jcrop.min.js"></script>
+		<link href="jcrop/css/jquery.Jcrop.min.css" rel="stylesheet" type="text/css" />
+
+
+<script>
+
+var TAR_WID = 350;
+var TAR_HEI = 200;
+
+var IMG_HEI = 720;
+var IMG_WID = 960;
+
+$(function(){
+	$('#jcrop_target').Jcrop({
+		onChange: showPreview,
+		onSelect: showPreview,
+		aspectRatio: TAR_WID/TAR_HEI
+	});
+
+});
+function showPreview(coords){
+	var IMG_WID = parseInt($("#preview").css("width"));
+	var IMG_HEI = parseInt($("#preview").css("height"));
+
+	var rx = TAR_WID / coords.w;
+	var ry = TAR_HEI / coords.h;
+
+	$('#preview').css({
+		width: Math.round(rx * IMG_WID) + 'px',
+		height: Math.round(ry * IMG_HEI) + 'px',
+		marginLeft: '-' + Math.round(rx * coords.x) + 'px',
+		marginTop: '-' + Math.round(ry * coords.y) + 'px'
+	});
+}
+</script>
+		
+	</head>
+
+	<body>
+		<img id="jcrop_target" src="http://i.imgur.com/k0vGY.jpg" />
+		<div style="width:350px;height:200px;overflow:hidden;">
+			<img id="preview" src="http://i.imgur.com/k0vGY.jpg" />
+		</div>
+	</body>
+</html>

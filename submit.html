@@ -6,6 +6,8 @@
 	<script src="jquery.js"></script>
 	<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
 	<script src="bootstrap/js/bootstrap.min.js"></script>
+		<script src="jcrop/js/jquery.Jcrop.min.js"></script>
+		<link href="jcrop/css/jquery.Jcrop.min.css" rel="stylesheet" type="text/css" />
 	<style type="text/css">
 .fieldcombo {
 	margin-bottom: 50px;
@@ -30,7 +32,50 @@
 	</style>
 	<script>
 
+
+function image_loader() {
+	var TAR_WID = 350;
+	var TAR_HEI = 200;
+
+	var showPreview = function(coords)
+	{
+		var rx = TAR_WID / coords.w;
+		var ry = TAR_HEI / coords.h;
+			var IMG_HEI = parseInt($(".jcrop-holder").css("height"));
+			var IMG_WID = parseInt($(".jcrop-holder").css("width"));
+
+		console.log(IMG_WID+","+IMG_HEI);
+		$('#preview').css({
+			
+			width: Math.round(rx * IMG_WID) + 'px',
+			height: Math.round(ry * IMG_HEI) + 'px',
+			marginLeft: '-' + Math.round(rx * coords.x) + 'px',
+			marginTop: '-' + Math.round(ry * coords.y) + 'px'
+		});
+	}
+
+	$("#loadimg").click(function() {
+		console.log("Loading:"+$("#imgurl").val());
+		var url = $("#imgurl").val();
+		$("#jcrop_target").attr({"src":url});
+		
+		$("#jcrop_target").load(function() {
+
+			$("#preview").attr({"src":url});
+			
+			$('#jcrop_target').Jcrop({
+				onChange: showPreview,
+				onSelect: showPreview,
+				aspectRatio: TAR_WID/TAR_HEI
+			});
+		});
+		
+	});
+}
+	
+	
 $(function(){
+	image_loader();
 	
 	var firstcombo = makecombo();
 	var addfield = $('<a style="margin-left:20px;">(Add Another Field)</a>');
@@ -49,14 +94,13 @@ $(function(){
 		addfield.click(self);
 		
 		var position = new_field.position();
-		scroll(0,position.top);
+		//scroll(0,position.top);
+		$("html,body").animate({
+			scrollTop:new_field.offset().top
+		},500);
 	}
-	
-	
 	addfield.click(self);
 	$("#fields").append(firstcombo);
-	
-	
 	$("#submit").click(function() {
 		var output = {};
 		output.fields = [];
@@ -86,18 +130,12 @@ $(function(){
 function makecombo() {
 	var newcombo = $("<div class='fieldcombo'><hr /></div>");
 	newcombo.append($('<h4>Field:</h4><input class="enterfield" type="text" name="field" />'));
-	
 	var adddetail = $('<a style="margin-left:25px;">(Add Another Detail)</a>');
-
 	var list = $("<ul>");
 	var detail = get_detail();
-	
 	list.append(detail);
-
 	newcombo.append(list);
-	
 	newcombo.append(adddetail);
-
 	adddetail.click(function(){
 		var deldetail = $('<a style="margin-left:20px; vertical-align:-70%;" >(Delete Detail)</a>');
 		var new_detail = get_detail();
@@ -106,8 +144,11 @@ function makecombo() {
 		deldetail.click(function() {
 			new_detail.remove();
 		});
-		var position = new_detail.position();
-		scroll(0,position.top);
+		//var position = new_detail.position();
+		//scroll(0,position.top);
+		$("html,body").animate({
+			scrollTop:new_detail.offset().top
+		},500);
 	});
 	return newcombo;
 }
@@ -134,10 +175,18 @@ function get_detail() {
 				<textarea rows="2" id="focus" name="focus"  ></textarea><br>
 			</div>
 			<div class="span4">
-				<h3>Image upload</h3>
+				<h3>Image URL(Optional)</h3>
+				<input type="text" id="imgurl" name="imgurl"/>
+				<button style="margin-top:-10px" class="btn" id="loadimg">Load</button>
+				
+				<img id="jcrop_target" src="" />
+				<div style="width:350px;height:200px;overflow:hidden;">
+					<img id="preview" style="max-width:none;" src="" />
+				</div>
+				
 			</div>
 		</div>
-		<div class="row">
+		<div class="row" style="margin-bottom:40px;">
 			<div class="span12">
 				<div id="fields">
 				</div>
