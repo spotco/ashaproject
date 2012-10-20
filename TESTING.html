@@ -1,0 +1,23 @@
+<html>
+<head>
+	<title>
+		skdfjsdl
+	</title>
+	<script src="jquery.js"></script>
+	<script>
+		$(function() {
+			$.get("webservice.php").done(success);
+		})
+		
+		function success(elem) {
+			$(".putHere").html(elem);
+		}
+	</script>
+</head>
+
+<body>
+	<h1> Hello World</h1>
+	<div class="putHere">
+	</div>
+</body>
+</html>

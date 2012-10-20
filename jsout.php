@@ -6,7 +6,14 @@ $USER = "spotco_sql";
 $PASSWORD = "dododo";
 $DBNAME = "spotco_ashaproject";
 $DB = new PDO("mysql:dbname=$DBNAME;host=$SERVER", $USER, $PASSWORD);
-$select_proj = $DB->prepare('SELECT * from projects');
+$select_proj;
+if (isset($_REQUEST["target"]) && is_numeric($_REQUEST["target"])) {
+	$tar = $_REQUEST["target"];
+	$select_proj = $DB->prepare("SELECT * from projects WHERE p_id = $tar");
+} else {
+	$select_proj = $DB->prepare('SELECT * from projects');
+}
+
 $select_proj->execute();
 $projects = $select_proj->fetchAll();
 

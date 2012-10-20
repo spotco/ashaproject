@@ -1,5 +1,24 @@
 .video {
 	margin-top: 15px;
+	height: 28px;
+	overflow: hidden;
+}
+
+.video p {
+	font-weight: bold;
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	color: white;
+	margin-left: 330px;
+	margin-top: 3px;
+	cursor: pointer;
+}
+
+#container {
+	width: 1200px;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 #logo {
